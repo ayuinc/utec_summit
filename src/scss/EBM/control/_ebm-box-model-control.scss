@@ -1,0 +1,105 @@
+// Change for empty string to remove !important
+$importantize: "!important";
+
+@for $i from 0 through 10 {
+  @for $j from 1 through length($box-model-sides) {
+    .#{nth($box-model-abbr, $j)}-#{$i*$times} {
+      // For <IE8
+      #{nth($box-model-sides, $j)}: ($i*$times) + px #{$importantize};
+      // REMs for modern browsers
+      @if $px-to-rems == true {
+        #{nth($box-model-sides, $j)}: rem($i*$times) #{$importantize};
+      }
+    }
+    @for $k from 1 through length($breakpoints-sufix-list) {
+      @media #{nth($media-control-list, $k)} {
+        .#{nth($box-model-abbr, $j)}-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {          
+          // For <IE8
+          #{nth($box-model-sides, $j)}: ($i*$times) + px #{$importantize};
+          // REMs for modern browsers
+          @if $px-to-rems == true {
+            #{nth($box-model-sides, $j)}: rem($i*$times) #{$importantize};
+          }
+        }
+      }
+    }
+  }
+}
+
+// PADDING VERTICAL & HORIZONTAL
+@for $i from 0 through 20 {
+  .pv-#{$i*$times} {
+    padding-top: ($i*$times) + px #{$importantize};
+    padding-bottom: ($i*$times) + px #{$importantize};
+    padding-top: rem($i*$times) #{$importantize};
+    padding-bottom: rem($i*$times) #{$importantize};
+  }
+  @for $k from 1 through length($breakpoints-sufix-list) {
+    @media #{nth($media-control-list, $k)} {
+      .pv-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
+        padding-top: ($i*$times) + px #{$importantize};
+        padding-bottom: ($i*$times) + px #{$importantize};
+        padding-top: rem($i*$times) #{$importantize};
+        padding-bottom: rem($i*$times) #{$importantize};
+      }
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .ph-#{$i*$times} {
+    padding-left: ($i*$times) + px #{$importantize};
+    padding-right: ($i*$times) + px #{$importantize};
+    padding-left: rem($i*$times) #{$importantize};
+    padding-right: rem($i*$times) #{$importantize};
+  }
+  @for $k from 1 through length($breakpoints-sufix-list) {
+    @media #{nth($media-control-list, $k)} {
+      .ph-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
+        padding-left: ($i*$times) + px #{$importantize};
+        padding-right: ($i*$times) + px #{$importantize};
+        padding-left: rem($i*$times) #{$importantize};
+        padding-right: rem($i*$times) #{$importantize};
+      }
+    }
+  }
+}
+
+// MARGIN VERTICAL & HORIZONTAL
+@for $i from 0 through 10 {
+  .mv-#{$i*$times} {
+    margin-top: ($i*$times) + px #{$importantize};
+    margin-bottom: ($i*$times) + px #{$importantize};
+    margin-top: rem($i*$times) #{$importantize};
+    margin-bottom: rem($i*$times) #{$importantize};
+  }
+  @for $k from 1 through length($breakpoints-sufix-list) {
+    @media #{nth($media-control-list, $k)} {
+      .mv-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
+        margin-top: ($i*$times) + px #{$importantize};
+        margin-bottom: ($i*$times) + px #{$importantize};
+        margin-top: rem($i*$times) #{$importantize};
+        margin-bottom: rem($i*$times) #{$importantize};
+      }
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .mh-#{$i*$times} {
+    margin-left: ($i*$times) + px #{$importantize};
+    margin-right: ($i*$times) + px #{$importantize};
+    margin-left: rem($i*$times) #{$importantize};
+    margin-right: rem($i*$times) #{$importantize};
+  }
+  @for $k from 1 through length($breakpoints-sufix-list) {
+    @media #{nth($media-control-list, $k)} {
+      .mh-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
+        margin-left: ($i*$times) + px #{$importantize};
+        margin-right: ($i*$times) + px #{$importantize};
+        margin-left: rem($i*$times) #{$importantize};
+        margin-right: rem($i*$times) #{$importantize};
+      }
+    }
+  }
+}
