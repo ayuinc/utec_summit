@@ -975,7 +975,7 @@
 }
 
 /*
-	EBM Global styles
+  EBM Global styles
 */
 html,
 body {
@@ -1311,9 +1311,13 @@ a {
 }
 
 /*INPUT STYLE*/
+.area-custom {
+  width: 359px;
+}
+
 .input-form-postulacion {
-  height: 42px;
-  width: 100%;
+  height: 31px;
+  width: 359px;
 }
 
 .text-danger {
@@ -1356,7 +1360,7 @@ a {
 }
 
 /*
-	Media queries
+  Media queries
 */
 /* Prevent layout breakage on unsupporting browsers */
 html.no-js .flex-space-between:before, html.no-js .flex-space-between:after {
