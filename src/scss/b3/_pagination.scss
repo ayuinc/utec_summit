@@ -43,6 +43,7 @@
       color: $pagination-hover-color;
       background-color: $pagination-hover-bg;
       border-color: $pagination-hover-border;
+      transition: 0.3s all ease-in-out;
     }
   }
 
@@ -56,6 +57,7 @@
       background-color: $pagination-active-bg;
       border-color: $pagination-active-border;
       cursor: default;
+      transition: 0.3s all ease-in-out;
     }
   }
 
@@ -70,6 +72,7 @@
       background-color: $pagination-disabled-bg;
       border-color: $pagination-disabled-border;
       cursor: $cursor-disabled;
+      transition: 0.3s all ease-in-out;
     }
   }
 }

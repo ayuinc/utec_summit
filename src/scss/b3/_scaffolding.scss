@@ -53,6 +53,7 @@ a {
   &:focus {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
+    transition: 0.3s all ease-in-out;
   }
 
   &:focus {
@@ -146,5 +147,6 @@ hr {
     margin: 0;
     overflow: visible;
     clip: auto;
+    transition: 0.3s all ease-in-out;
   }
 }

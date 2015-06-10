@@ -8,18 +8,131 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #3E3F40 !default;
-$gray-darker:            #3E3F40 !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   #7D7E7F !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           #F0F0F0 !default; // #eee
+$gray-base:              #000 !default;
+$gray-darker:            #191919 !default; // #222
+$gray-dark:              #323232 !default;   // #333
+$gray:                   #8f8d8e !default; // #555
+$gray-light:             #e3e3e3 !default; // #777
+$gray-lighter:           #f1f1f1 !default; // #eee
 
-$brand-primary:         darken(#428bca, 6.5%) !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         #00BFDF !default;
+$brand-success:         #8DC63F !default;
+$brand-info:            #2E4372 !default;
+$brand-warning:         #FFDD00 !default;
+$brand-danger:          #DD5341 !default;
+
+$blue-base: #3A4959;
+
+$blue-darker:            lighten($blue-base, 0%) !default; // #222
+$blue-dark:              lighten($blue-base, 21%) !default;   // #333
+$blue:                   lighten($blue-base, 35%) !default; // #555
+$blue-light:             lighten($blue-base, 63%) !default;   // #999
+$blue-lighter:           lighten($blue-base, 70%) !default; // #eee
+
+// EBM:REF
+$brand-inverse: 				#081A26 !default;
+
+// EBM:REF
+// SOCIAL COLORS
+$color-facebook: 		#3B5998 !default;
+$color-twitter: 		#34CCFE !default;
+$color-pinterest: 	#D02420 !default;
+$color-google-plus: #DC4335 !default;
+$color-linkedin: 		#1C87BD !default;
+$color-youtube: 		#F23030 !default;
+$color-instagram: 	#4187FB !default;
+
+// COLOR LISTS
+// EBM:REF
+$grayscale-list: 
+	$gray-darker, 
+	$gray-dark, 
+	$gray, 
+	$gray-light, 
+	$gray-lighter, 
+	#fff;
+
+$brand-colors-list: 
+	$brand-primary, 
+	$brand-success, 
+	$brand-info, 
+	$brand-warning, 
+	$brand-danger, 
+	$blue-darker, 
+	$blue-dark, 
+	$blue, 
+	$blue-light, 
+	$blue-lighter;
+
+$social-colors-list: 
+	$color-facebook,
+	$color-twitter, 	
+	$color-pinterest, 
+	$color-google-plus,
+	$color-youtube,
+	$color-instagram,
+	$color-linkedin; 	
+
+// COLOR SUFIX's
+// EBM:REF
+$grayscale-sufix-list: 
+	'gray-darker', 
+	'gray-dark', 
+	'gray', 
+	'gray-light', 
+	'gray-lighter', 
+	'white';
+
+$brand-colors-sufix-list: 
+	'primary', 
+	'success', 
+	'info', 
+	'warning', 
+	'danger',
+	'blue-darker', 
+	'blue-dark', 
+	'blue', 
+	'blue-light', 
+	'blue-lighter';
+
+$social-colors-sufix-list: 
+	'facebook',
+	'twitter',	
+	'pinterest',
+	'google-plus',
+	'youtube',
+	'instagram',
+	'linkedin';
+
+// EBM:REF
+$breakpoints-sufix-list:  
+	'xs', 
+	'sm', 
+	'md', 
+	'lg';
+
+// EBM:REF
+$sizes-list:
+	"xs",
+	"sm",
+	"lg",
+	"xl";
+
+// EBM:REF
+$text-elements-list: 
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "p",
+  "span",
+  "a",
+  "em",
+  "i",
+  "strong",
+  "li";
 
 
 //== Scaffolding
@@ -36,20 +149,20 @@ $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "proxima-nova", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          16px !default;
+$font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -107,9 +220,9 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;

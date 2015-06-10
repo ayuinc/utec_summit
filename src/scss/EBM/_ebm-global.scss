@@ -3,17 +3,133 @@
 */
 html,
 body {
-	background-color: $body-bg;	
+	background-color: $body-bg;
+	font-family:"proxima-nova";
 	&::-webkit-scrollbar { 
     display: none; 
 	}
 }
-
 .site-wrapper,
 .site-content {
 	position: relative;
 }
+a{
+	text-decoration: none;
+}
+/*LOGOS HEADER*/
+.logo > a > img{
+	width: 65%;
+}
+/*ICON CALL TO ACTION*/
+.icon-cta{
+  width: 10%;
+  margin-left: 5px;
+  padding-bottom: 3px;
+}
+.logo-sponsors-home > img{
+	width:100%;
+}
+/*FOOTER ICONS*/
+.icon-footer-facebook{
+	width:4%;
+}
+.icon-footer{
+	width: 8%;
+}
+.col-sm-3 > ul > li {
+	padding-bottom:9px;
+}
+/*BACKGROUND SIZE CONTROL*/
+.bg-img-block{
+  width: 100%;
+  height: 495px !important;
+  background-repeat: no-repeat;
+}
+/*BORDER BTN KIT*/
+.btn-kit-prensa{
+	border: 1px solid #8f8d8e;
+	width: 215px;
+}
+/*FACEBOOK PLUG-IN*/
+.social-plugin-custom{
+  width: 290px !important;
+  height: 400px !important;
+}
+/*TWITTER PLUG-IN*/
+#twitter-widget-0{
+	width:290px !important;
+  border-radius: 0 !important;
+}
+.root .timeline .ltr .customisable-border  .twitter-timeline .is-touch .twitter-timeline-rendered .var-narrow{
+	width: 290px !important;
+	border-radius: 0px !important;
+}
+.timeline{
+	border-radius: 0px !important;
+}
+/*FONT SIZES*/
+/*Formula para font-size*/
 
+@for $i from 1 through 50{
+  .font-s-#{$i*1} {
+    font-size: (1px*$i)!important;
+  }
+}
+/*Formula para weight*/
+
+@for $i from 1 through 9{
+  .fw-#{$i*100} {
+    font-weight:(100*$i)!important;
+  }
+}
+.lh-12{
+  line-height: 1.2;
+}
+/*INPUT STYLE*/
+.input-form-postulacion{
+  height: 42px;
+  width: 100%;
+}
+.text-danger {
+  color: #DD5341 !important;
+  &:hover{
+    color: #982a1b !important;
+  }
+}
+/*COLABORADORES FUNCTION*/
+.logo-sponsors-home{
+  img{
+    opacity: 0.8;
+  }
+}
+.logo-sponsors-home {
+  img{
+    filter: url('#grayscale');
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: Gray();
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:hover{
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      filter: none;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+  }
+}
 /*
 	Media queries
 */

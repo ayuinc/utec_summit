@@ -70,13 +70,13 @@ $grid-o-sizes: xs, sm, md, lg;
 				text-decoration: none;
 				color: $gray;
 				min-height: 280px;
-				// @include transition(all 0.3s ease);
+				@include transition(all 0.3s ease);
 				&:hover {
 					text-decoration: none;
 					background: rgba($brand-primary, 0.3);
 					cursor: pointer;
 					color: darken($gray, 14%);
-					// @include transition(all 0.3s ease);
+					@include transition(all 0.3s ease);
 				}
 			}
 		}
