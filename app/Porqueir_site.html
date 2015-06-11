@@ -178,22 +178,28 @@
     </section>
     <section class="bg-gray-lighter pv-56">
       <div class="row text-center pb-14">
-        <h2 class="text-gray-darker fw-700">Siguenos en Facebook y Twitter</h2>
-        <p class="text-gray-darker font-s-25 fw-600">#sumatec</p>
+        <h2 class="text-gray-dark fw-700">Siguenos en Facebook y Twitter</h2>
+        <p class="text-gray-dark font-s-25 fw-600">#sumatec</p>
         <div class="col-sm-6 pv-21 mt-14 text-right">
           <a class="twitter-timeline" href="https://twitter.com/hashtag/sumatec" data-widget-id="608407854073147392">#sumatec Tweets</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-        <div class="col-sm-6 pv-21 mt-14 text-left">
-          <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="290" data-height="400" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-            <div class="fb-xfbml-parse-ignore">
-              <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Cap&#039;n Facebook</a></blockquote>
+          </div>
+          <div class="col-sm-6 pv-21 mt-14 text-left">
+            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="290" data-height="400" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+              <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Cap&#039;n Facebook</a></blockquote>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="scroll-down relative text-center" style="top: 40px;">
+          <div>
+            <a id="arrow" class="arrow" href="#colaboradores"><img src="assets/icons/scrolldown.png" alt=""></a>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-colaboradores pv-70">
+    <section class="section-colaboradores pv-70" id="colaboradores">
       <div class="container text-center pv-21">
         <h2 class="fw-900 text-gray-darker">Colaboradores</h2>
       </div>
@@ -312,5 +318,21 @@
   </div>
   <script src="assets/js/jquery.min.js"></script> <!-- App scripts -->
   <script src="assets/js/scripts.min.js"></script>
+  <script>
+     $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+     });
+  </script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f279493184b19f" async="async"></script>
 </html>
