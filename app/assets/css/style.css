@@ -1312,12 +1312,12 @@ a {
 
 /*INPUT STYLE*/
 .area-custom {
-  width: 359px;
+  width: 344px;
 }
 
 .input-form-postulacion {
   height: 31px;
-  width: 359px;
+  width: 344px;
 }
 
 .text-danger {
@@ -1357,6 +1357,19 @@ a {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+/*HEADER SCROLL*/
+.header-scroll {
+  position: fixed;
+  opacity: 0;
+  width: 1365px;
+  transition: 0.3s all ease-in-out;
+  z-index: 40;
+  top: 0;
+}
+.header-scroll.active {
+  opacity: 1;
 }
 
 /*

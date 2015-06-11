@@ -94,11 +94,11 @@ a{
 }
 /*INPUT STYLE*/
 .area-custom{
-  width: 359px;
+  width: 344px;
 }
 .input-form-postulacion{
   height: 31px;
-  width: 359px;
+  width: 344px;
 }
 .text-danger {
   color: #DD5341 !important;
@@ -140,6 +140,19 @@ a{
     }
   }
 }
+/*HEADER SCROLL*/
+.header-scroll {
+    position: fixed;
+    opacity: 0;
+    width: 1365px;
+    transition: 0.3s all ease-in-out; 
+    z-index: 40;
+    top: 0;
+    &.active {
+      opacity: 1; 
+    }
+  }
+
 /*
   Media queries
 */
