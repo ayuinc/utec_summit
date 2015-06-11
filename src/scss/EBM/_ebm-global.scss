@@ -57,6 +57,12 @@ a{
   border: 1px solid #8f8d8e;
   width: 215px;
 }
+/*BORDER PERCENTEGE PORQUE IR*/
+.border-percentege{
+  border: 1px solid #8f8d8e;
+  width: 13.66667% !important;
+  margin-bottom:63px;
+}
 /*FACEBOOK PLUG-IN*/
 .social-plugin-custom{
   width: 290px !important;
@@ -89,6 +95,14 @@ a{
     font-weight:(100*$i)!important;
   }
 }
+/*Formula para width*/
+
+@for $i from 1 through 10{
+  .w-#{$i*10} {
+    width : (10%*$i);
+  }
+}
+
 .lh-12{
   line-height: 1.2;
 }

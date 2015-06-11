@@ -11,8 +11,18 @@
   <script>try{Typekit.load();}catch(e){}</script>
   <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
   <link href="assets/css/ebm.css" rel="stylesheet">
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_PI/sdk.js#xfbml=1&version=v2.3&appId=282181671834587";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div class="site-wrapper"> <!-- Body -->
-    <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white" >
+  <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white" >
       <div class="container-lg">
         <div class="row">
           <div class="header-left col-sm-2 text-center pt-21">
@@ -22,13 +32,13 @@
           </div>
           <div class="header-center text-center col-sm-8 pt-28">
             <nav class="header-nav-center ml-ch-70 text-gray thin text-left nav-list font-s-16">
-              <a class="thin" href="Porqueir_site.html">¿Porque ir?</a>
-              <a class="thin" href="">Expositores</a>
-              <a class="thin" href="Agenda_site.html">Agenda</a>
-              <a class="thin" href="">Sede</a>
-              <a class="thin" href="Engage_site.html">Engage</a>
-              <a class="thin" href="Prensa_site.html">Prensa</a>
-              <a class=" thin btn btn-danger"href="">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""> </a>
+                <a class="thin" href="Porqueir_site.html">¿Porque ir?</a>
+                <a class="thin" href="">Expositores</a>
+                <a class="thin" href="Agenda_site.html">Agenda</a>
+                <a class="thin" href="">Sede</a>
+                <a class="thin" href="Engage_site.html">Engage</a>
+                <a class="thin" href="Prensa_site.html">Prensa</a>
+                <a class=" thin btn btn-danger"href="">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""> </a>
             </nav>
           </div>
             <div class="header-right col-sm-2"> 
@@ -71,45 +81,114 @@
         <div class="col-sm-6">
           <div class="col-sm-4"></div>
           <div class="col-sm-8 pv-35">
-             <h4 class="pt-70 text-uppercase fw-100 text-center text-gray ">Conectate con nosotros</h4>
-             <p class="text-center font-s-30 fw-900">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+             <p class="text-center font-s-30 fw-900 pt-63">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+             <p class="text-left pl-28">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ipsum cupiditate aut molestias saepe nisi eveniet necessitatibus harum maiores consectetur.</p>
           </div>
         </div>
         <div class="col-sm-6"></div>
       </div> 
     </section>
     <section class="pv-70">
-      <div class="container-sm text-left">
+      <div class="container-sm text-center">
         <div class="row">
-          <div class="col-sm-12 mt-42 p-70 border-engage-content">
-            <h3 class="text-gray-darker light pb-7 fw-400">Únete al newsletter</h3>
-            <p class="font-s-16 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
-            <a class="font-s-13 text-danger text-uppercase" href="">inscribete aquí <span>&#8594;</span></a>
+          <div class="col-sm-12">
+            <p class="font-s-18 thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
+            <p class="font-s-18 thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p> <br>  
           </div>
-          <div class="col-sm-12 mt-42 p-70 border-engage-content">
-            <h3 class="text-gray-darker light pb-7 fw-400"><img class="pr-21 pb-7" src="assets/icons/linkedin-engage.png" alt="">Únete a nuestro grupo de Linkedin</h3>
-            <p class="font-s-16 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
-            <a class="font-s-13 text-danger text-uppercase" href="">ingresa <span>&#8594;</span></a>
+          <div class="col-sm-12 bg-img-block" style="background-image: url(assets/img/foto-por-que-ir.png)"></div>
+        </div>
+        <div class="row pt-70">
+          <div class="col-sm-2 pl-21 pr-0 pt-56">
+            <img class="w-50" src="assets/icons/beneficio-1-home.png" alt="">
           </div>
-          <div class="col-sm-12 mt-42 p-70 border-engage-content">
-            <h3 class="text-gray-darker light pb-7 fw-400"><img class="pr-21 pb-7" src="assets/icons/facebook-engage.png" alt="">Encuéntranos en Facebook</h3>
-            <p class="font-s-16 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
-            <a class="font-s-13 text-danger text-uppercase" href="">ingresa <span>&#8594;</span></a>
+          <div class="col-sm-10 text-left pl-0">
+            <h3 class="text-gray-dark fw-600">Networking</h3>
+            <p class="text-gray font-s-16 mb-56">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque excepturi totam molestias, expedita, quas id ipsa officia laudantium odit ad. Natus quam, at, veritatis totam quibusdam accusantium laborum itaque.</p>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege p-21 mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege p-21 mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege pt-21 pb-21  mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
           </div>
-          <div class="col-sm-12 mt-42 p-70 border-engage-content">
-            <h3 class="text-gray-darker light pb-7 fw-400"><img class="pr-21 pb-7" src="assets/icons/youtube-engage.png" alt="">Mira nuestro canal de Youtube</h3>
-            <p class="font-s-16 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
-            <a class="font-s-13 text-danger text-uppercase" href="">ingresa <span>&#8594;</span></a>
+          <div class="col-sm-2 pl-21 pr-0 pt-56">
+            <img class="w-50" src="assets/icons/beneficio-2-home.png" alt="">
           </div>
-          <div class="col-sm-12 mt-42 p-70 border-engage-content">
-            <h3 class="text-gray-darker light pb-7 fw-400"><img class="pr-21 pb-7" src="assets/icons/twitter-engage.png" alt="">Síguenos en Twitter</h3>
-            <p class="font-s-16 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
-            <a class="font-s-13 text-danger text-uppercase" href="">siguenos en #sumatec <span>&#8594;</span></a>
+          <div class="col-sm-10 text-left pl-0">
+            <h3 class="text-gray-dark fw-600">Conocimiento</h3>
+            <p class="text-gray font-s-16 mb-56">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque excepturi totam molestias, expedita, quas id ipsa officia laudantium odit ad. Natus quam, at, veritatis totam quibusdam accusantium laborum itaque.</p>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege p-21 mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege p-21 mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege pt-21 pb-21  mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
           </div>
-          <div class="col-sm-12 mt-42 p-70 border-engage-content">
-            <h3 class="text-gray-darker light pb-7 fw-400">Otras maneras de mantenerte conectado</h3>
-            <p class="font-s-16 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
-            <a class="font-s-13 text-danger text-uppercase" href="">ingresa <span>&#8594;</span></a>
+          <div class="col-sm-2 pl-21 pr-0 pt-56">
+            <img class="w-50" src="assets/icons/beneficio-3-home.png" alt="">
+          </div>
+          <div class="col-sm-10 text-left pl-0">
+            <h3 class="text-gray-dark fw-600">Innovación</h3>
+            <p class="text-gray font-s-16 mb-56">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam atque excepturi totam molestias, expedita, quas id ipsa officia laudantium odit ad. Natus quam, at, veritatis totam quibusdam accusantium laborum itaque.</p>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege p-21 mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege p-21 mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
+            <div class="text-center text-gray-dark col-sm-2 border-percentege pt-21 pb-21  mr-14">
+                <span class="fw-600 font-s-30">30%</span>
+            </div>
+            <div class="text-gray col-sm-2 pt-56 pl-0">
+              <span>Vim error definitionem</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-lighter pv-56">
+      <div class="row text-center pb-14">
+        <h2 class="text-gray-darker fw-700">Siguenos en Facebook y Twitter</h2>
+        <p class="text-gray-darker font-s-25 fw-600">#sumatec</p>
+        <div class="col-sm-6 pv-21 mt-14 text-right">
+          <a class="twitter-timeline" href="https://twitter.com/hashtag/sumatec" data-widget-id="608407854073147392">#sumatec Tweets</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <div class="col-sm-6 pv-21 mt-14 text-left">
+          <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="290" data-height="400" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+            <div class="fb-xfbml-parse-ignore">
+              <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Cap&#039;n Facebook</a></blockquote>
+            </div>
           </div>
         </div>
       </div>

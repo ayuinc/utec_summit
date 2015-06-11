@@ -1046,6 +1046,13 @@ a {
   width: 215px;
 }
 
+/*BORDER PERCENTEGE PORQUE IR*/
+.border-percentege {
+  border: 1px solid #8f8d8e;
+  width: 13.66667% !important;
+  margin-bottom: 63px;
+}
+
 /*FACEBOOK PLUG-IN*/
 .social-plugin-custom {
   width: 290px !important;
@@ -1304,6 +1311,47 @@ a {
 
 .fw-900 {
   font-weight: 900 !important;
+}
+
+/*Formula para width*/
+.w-10 {
+  width: 10%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .lh-12 {
