@@ -908,10 +908,6 @@ pre code {
   clear: both;
 }
 
-.row {
-  margin-left: -14px;
-  margin-right: -14px;
-}
 .row:before, .row:after {
   content: " ";
   display: table;
@@ -2301,10 +2297,6 @@ select[multiple].input-lg,
 .form-horizontal .radio,
 .form-horizontal .checkbox {
   min-height: 27px;
-}
-.form-horizontal .form-group {
-  margin-left: -14px;
-  margin-right: -14px;
 }
 .form-horizontal .form-group:before, .form-horizontal .form-group:after {
   content: " ";
