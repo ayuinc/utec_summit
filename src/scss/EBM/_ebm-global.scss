@@ -49,7 +49,7 @@ a{
   width: 100%;
   height: 343px !important;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
 }
 /*BORDER BTN KIT*/
@@ -167,7 +167,6 @@ a{
 .header-scroll {
     position: fixed;
     opacity: 0;
-    width: 1365px;
     transition: 0.3s all ease-in-out; 
     z-index: 40;
     top: 0;
