@@ -18,7 +18,14 @@ a{
 }
 /*LOGOS HEADER*/
 .logo > a > img{
+  width: 100%;
+}
+.logo-footer{
   width: 65%;
+}
+.logo-utec-byw > a > img{
+  padding-top: 4px;
+  width: 60%;
 }
 /*ICON CALL TO ACTION*/
 .icon-cta{
@@ -44,13 +51,24 @@ a{
   bottom: 2px;
   position: relative;
 }
+/*CALENDARIO DE EXPOSITORES FECHA-MES-HORA*/
+.calendario-expositores{
+  border: 1px solid $brand-danger;
+  width: 104px;
+  height: 63px;
+  top:20px;
+  left:8px;
+  .numero-de-fecha{
+    border-right: 1px solid white;
+  }
+}
 /*BACKGROUND SIZE CONTROL*/
 .bg-img-block{
-  width: 100%;
-  height: 343px !important;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
+  height: 343px !important;
+  background-size: cover;
+  width: 100%;
 }
 /*BORDER BTN KIT*/
 .btn-kit-prensa{
@@ -61,7 +79,6 @@ a{
 .border-percentege{
   border: 1px solid #8f8d8e;
   width: 13.66667% !important;
-  margin-bottom:63px;
 }
 /*FACEBOOK PLUG-IN*/
 .social-plugin-custom{
@@ -72,8 +89,8 @@ a{
 #twitter-widget-12,
 #twitter-widget-4,
 #twitter-widget-0{
-  width:290px !important;
   border-radius: 0 !important;
+  width:290px !important;
 }
 .root .timeline .ltr .customisable-border  .twitter-timeline .is-touch .twitter-timeline-rendered .var-narrow{
   width: 290px !important;
@@ -82,12 +99,28 @@ a{
 .timeline{
   border-radius: 0px !important;
 }
+.icon-profile-expositores{
+  position: relative;
+  top: 10px;
+  right: 53px;
+}
+.icon-profile-expositores-email{
+  @extend .icon-profile-expositores;
+  right: 80px;
+}
 /*FONT SIZES*/
 /*Formula para font-size*/
 
 @for $i from 1 through 50{
   .font-s-#{$i*1} {
     font-size: (1px*$i)!important;
+  }
+}
+/*Formula para min-height*/
+
+@for $i from 1 through 30{
+  .h-#{$i*60} {
+    height : (60px*$i)!important;
   }
 }
 /*Formula para weight*/
@@ -99,7 +132,7 @@ a{
 }
 /*Formula para width*/
 
-@for $i from 1 through 10{
+@for $i from 1 through 90{
   .w-#{$i*10} {
     width : (10%*$i);
   }
@@ -130,6 +163,40 @@ a{
   &:hover{
     color: #982a1b !important;
   }
+}
+/*SHARE BUTTONS SIDE STYLE*/
+.at4-share-btn .at-svc-twitter,
+.atss a {
+    position: relative;
+    display: block;
+    width: 48px;
+    line-height: 48px;
+    margin: 0;
+    padding: 8px 0;
+    outline: none;
+    text-align: center;
+    text-indent: -9999em;
+    float: left;
+    -webkit-transition: width .15s ease-in-out;
+    -moz-transition: width .15s ease-in-out;
+    -ms-transition: width .15s ease-in-out;
+    -o-transition: width .15s ease-in-out;
+    transition: width .15s ease-in-out;
+    overflow: hidden;
+    background: #979797 !important;
+    z-index: 100030;
+}
+a.at-svc-facebook:hover {
+    background: #305891 !important;
+    transition: width .5s ease-in-out;
+}
+a.at-svc-twitter:hover, a.at-svc-yammer:hover {
+    background: #2ca8d2 !important;
+    transition: width .5s ease-in-out;
+}
+a.at-svc-pinterest_share:hover {
+    background: #c82828 !important;
+    transition: width .5s ease-in-out;
 }
 /*COLABORADORES FUNCTION*/
 .logo-sponsors-home{
@@ -167,10 +234,10 @@ a{
 }
 /*HEADER SCROLL*/
 .header-scroll {
-    position: fixed;
-    opacity: 0;
     transition: 0.3s all ease-in-out; 
+    position: fixed;
     z-index: 40;
+    opacity: 0;
     top: 0;
     &.active {
       opacity: 1; 
@@ -189,7 +256,7 @@ a{
 .addthisevent .data           {display:none!important;}
 
 /* The button */
-.addthisevent-drop            {display:inline-block;position:relative;z-index:999998;font-family:"proxima-nova",Arial,sans-serif;color:#000!important;font-weight:300;line-height:100%;background:#fff;border:1px solid;border-color:#e5e6e9 #dfe0e4 #d0d1d5;font-size:15px;text-decoration:none;padding:13px 12px 12px 13px;-webkit-border-radius:3px;border-radius:3px;cursor:pointer;-webkit-font-smoothing:antialiased!important;text-shadow:1px 1px 1px rgba(0,0,0,0.004);}
+.addthisevent-drop            {display:inline-block;position:relative;z-index:9s;font-family:"proxima-nova",Arial,sans-serif;color:#000!important;font-weight:300;line-height:100%;background:#fff;border:1px solid;border-color:#e5e6e9 #dfe0e4 #d0d1d5;font-size:15px;text-decoration:none;padding:13px 12px 12px 13px;-webkit-border-radius:3px;border-radius:3px;cursor:pointer;-webkit-font-smoothing:antialiased!important;text-shadow:1px 1px 1px rgba(0,0,0,0.004);}
 .addthisevent-drop:hover        {border:1px solid #aab9d4;color:#000;font-size:15px;text-decoration:none;}
 .addthisevent-drop:active         {top:1px;}
 .addthisevent-selected          {background-color:#f9f9f9;}
@@ -203,7 +270,17 @@ a{
 .addthisevent_dropdown .brx       {height:1px;overflow:hidden;background:#e0e0e0;position:absolute;z-index:100;left:10px;right:10px;top:9px;}
 .addthisevent_dropdown .frs       {position:absolute;top:5px;cursor:pointer;right:10px;padding-left:10px;font-style:normal;font-weight:normal;text-align:right;z-index:101;line-height:110%;background:#fff;text-decoration:none;font-size:9px;color:#cacaca;}
 .addthisevent_dropdown .frs:hover     {color:#6d84b4;}
+// formula center right left 
+
+$position: fixed relative absolute static;
+
+@each $place in $position {
+  .#{$place}{
+  position: $place;
+  }
+}
 /*
+
   Media queries
 */
 $xl-desktop: 1500px;
