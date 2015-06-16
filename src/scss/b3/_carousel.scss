@@ -95,6 +95,7 @@
   top: 0;
   left: 0;
   bottom: 0;
+  z-index: 15;
   width: $carousel-control-width;
   @include opacity($carousel-control-opacity);
   font-size: $carousel-control-font-size;
@@ -124,13 +125,18 @@
   }
 
   // Toggles
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next,
+  .carousel-control .icon-prev{
+    top: 88% !important; 
+  }
   .icon-prev,
   .icon-next,
   .glyphicon-chevron-left,
   .glyphicon-chevron-right {
     position: absolute;
-    top: 50%;
-    z-index: 5;
+    z-index: 15;
     display: inline-block;
   }
   .icon-prev,
@@ -151,8 +157,6 @@
     line-height: 1;
     font-family: serif;
   }
-
-
   .icon-prev {
     &:before {
       content: '\2039';// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
@@ -219,7 +223,7 @@
   left: 15%;
   right: 15%;
   bottom: 20px;
-  z-index: 10;
+  z-index: 15 !important;
   padding-top: 20px;
   padding-bottom: 20px;
   color: $carousel-caption-color;
@@ -264,6 +268,6 @@
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20px;
+    bottom: 0px !important;
   }
 }
