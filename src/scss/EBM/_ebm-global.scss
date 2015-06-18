@@ -70,7 +70,12 @@ a{
   background-size: cover;
   width: 100%;
 }
-/*BORDER BTN KIT*/
+.bg-img-block-home{
+  @extend .bg-img-block;
+  height: 495px !important;  
+} 
+/*BORDER BTN KIT/ POST-EVENTO*/
+.btn-cta-post-evento,
 .btn-kit-prensa{
   border: 1px solid #8f8d8e;
   width: 215px;
@@ -234,7 +239,7 @@ a.at-svc-pinterest_share:hover {
 }
 /*FILTRO AZUL CAROUSEL*/
 .bluescale{
--webkit-filter: grayscale(0.3) hue-rotate(180deg);
+-webkit-filter: grayscale(0.7) hue-rotate(180deg) saturate(3.8);
 }
 /*FILTRO GRIS DE GRID -SEDE*/
 .greyfilter{
@@ -281,6 +286,9 @@ BORDER CONTENT GRID SEDE
 // Move up the indicators
 .carousel-indicators {
   bottom: 0px !important;
+}
+.carousel-indicators-homepage .active {
+  background-color: rgba(14, 14, 14, 0.49) !important;
 }
 /*HEADER SCROLL*/
 .header-scroll {
@@ -330,7 +338,110 @@ $position: fixed relative absolute static;
   }
 }
 /*
+ POP UP
+*/
+/*LOG IN */
 
+a{
+    outline: 0;
+    text-decoration: none;
+}
+.modal-bg{
+    display: none;
+    position:fixed;
+    left:0;right:0;
+    top:0;bottom:0;
+    z-index:100;
+    background-color:rgba(50,50,50,0.5);
+}
+.form-in{
+    display:block;
+}
+.form-in *{
+    margin:10px;
+}
+.casilla:focus{
+    border:2px solid #28C5E6;
+    outline:0;
+}
+.casilla {
+    width:347px;
+    padding:7px;
+    border:2px solid #ccc ;
+    border-radius:3px;
+    right: 4%;
+}
+.boton-ingreso {
+  float: right;
+  padding: 8px 12px;
+  margin-top: 15px;
+  background: #28C5E6;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 11px;
+  cursor: pointer;
+  position: relative;
+  left: 1%;
+}
+.boton-ingreso:hover{
+    background-color: #28C5E6;
+}
+#forgot-link{
+  font-size: 1.3em;
+  font-weight: 200;
+  line-height: 1.5em;
+  position: relative;
+  top: -21px;
+  right: 23%;
+  color: #8B8B8B;
+  display: inline-block;
+}
+#forgot-link:hover{
+    color:#28C5E6;
+}
+#modal{ 
+    display: none;
+    position:absolute;
+    background-color: white;
+    top:37%; 
+    left:43%;
+    z-index:101;
+    border-radius:6%;
+    width:527px;
+    height:416px;
+    margin-top:-130px;
+    margin-left:-170px;
+    border: 5px solid #8C8987;
+    box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
+}
+#modal span{
+    display: block;
+    margin-top: 7%;
+    font-size: 3em;
+}
+#close{
+  color: #343434;
+  font-family: serif;
+  font-size: 23px;
+  font-weight: bold;
+  position: absolute;
+  left: 95%;
+  z-index: 5;
+  top: 8px;
+}
+#close:hover{
+    color: gray;
+}
+.text-in{
+  text-decoration: none;
+  color: #8B8B8B;
+  position: absolute;
+  top: 76.6%;
+  left: 49%;
+  font-size: 1.3em;
+}
+/*
   Media queries
 */
 $xl-desktop: 1500px;

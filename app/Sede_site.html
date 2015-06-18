@@ -22,6 +22,32 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 0px !important;">
+        <div class="modal-header" style="border-bottom: none;">
+          <button type="button" class="close text-danger fw-100 font-s-10 text-uppercase" data-dismiss="modal" style="opacity:1;">cerrar <span class="font-s-14">&times;</span></button>
+        </div>
+        <div class="modal-body" style="left: 10px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6653994170783!2d-77.02152415!3d-12.13503095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7fcaea4a133%3A0xb86fbddb0dc89e2e!2sUniversidad+de+Ingenier%C3%ADa+y+Tecnolog%C3%ADa!5e0!3m2!1ses!2spe!4v1434575418057" width="550" height="350" frameborder="0" style="border:0"></iframe>
+        </div>
+        <div class="row mr-0 ml-0">
+          <div class="col-sm-12 text-center">
+            <a class="font-s-13 text-danger text-uppercase" href="">Copiar enlace del mapa <span>&#8594;</span></a>
+            <p class="pt-14 text-gray">Universidad de Ingenieria <span>&#38;</span> Tecnología-UTEC.</p> 
+            <p class="text-gray">Av. Prolongación San Martin 207, Barranco-Lima</p>        
+          </div>
+          <div class="col-sm-12 text-center pv-35">
+            <a href=""><img src="assets/icons/facebook-redes-mapa.png" alt="Facebook UTEC"></a>
+            <a href=""><img src="assets/icons/twitter-redes-mapa.png" alt=""></a> 
+            <a href=""><img src="assets/icons/linkedin-redes-mapa.png" alt=""></a>                       
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
   <div class="site-wrapper"> <!-- Body -->
   <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white w-100" >
       <div class="container">
@@ -160,7 +186,7 @@
         <a class="font-s-13 text-danger text-uppercase" href="">descarga guía<span>&#8594;</span></a>
         <div class="pv-49 ph-7">
           <div class="row pl-14 pr-14 pt-14">
-            <div class="col-md-4 col-xs-12 mt-14 col-sm-12 h-170 greyfilter text-center bg-img-control-size-100 bg-img-block-center" style="background-image: url(assets/img/historias1.jpg)"> 
+            <div class="col-md-4 col-xs-12 mt-14 col-sm-12 h-170 greyfilter text-center bg-img-control-size-100 bg-img-block-center" style="background-image: url(assets/img/fotogris.jpg)"> 
             </div>
             <div class="col-md-8 col-xs-12 col-sm-12  content-text-border mt-21 p-7 pl-0 bg-white">
               <div class="text-left pt-14 pl-42 pr-42">
@@ -170,7 +196,7 @@
             </div>
           </div>
           <div class="row pl-14 pr-14 pt-14">
-            <div class="col-md-4 col-xs-12 mt-14 col-sm-12 h-170 greyfilter text-center bg-img-control-size-100 bg-img-block-center" style="background-image: url(assets/img/historias1.jpg)"> 
+            <div class="col-md-4 col-xs-12 mt-14 col-sm-12 h-170 greyfilter text-center bg-img-control-size-100 bg-img-block-center" style="background-image: url(assets/img/fotogris.jpg)"> 
             </div>
             <div class="col-md-8 col-xs-12 col-sm-12  content-text-border mt-21 p-7 pl-0 bg-white">
               <div class="text-left pt-14 pl-42 pr-42">
@@ -180,7 +206,7 @@
             </div>
           </div>
           <div class="row pl-14 pr-14 pt-14">
-            <div class="col-md-4 col-xs-12 mt-14 col-sm-12 h-170 text-center greyfilter bg-img-control-size-100 bg-img-block-center" style="background-image: url(assets/img/historias1.jpg)"> 
+            <div class="col-md-4 col-xs-12 mt-14 col-sm-12 h-170 text-center greyfilter bg-img-control-size-100 bg-img-block-center" style="background-image: url(assets/img/fotogris.jpg)"> 
             </div>
             <div class="col-md-8 col-xs-12 col-sm-12  content-text-border mt-21 p-7 pl-0 bg-white">
               <div class="text-left pt-14 pl-42 pr-42">
@@ -191,7 +217,7 @@
           </div>
         </div>
         <h2 class="text-gray-dark light fw-600">Mapa de la Sede</h2>
-        <a class="font-s-13 text-danger text-uppercase" href="">ver mapa<span>&#8594;</span></a>
+        <a class="btn-in font-s-13 text-danger text-uppercase" data-toggle="modal" data-target="#myModal">ver mapa<span>&#8594;</span></a> 
         <h2 class="text-gray-dark light fw-600">Zona de Barranco</h2>
         <p class="font-s-18 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p> 
         <div class="row pt-49 pl-14 pr-14">
