@@ -1005,6 +1005,11 @@ html,
 body {
   background-color: #fff;
   font-family: "proxima-nova";
+  line-height: 1;
+}
+
+p, span {
+  line-height: 1.2;
 }
 
 .site-wrapper,
@@ -3511,7 +3516,7 @@ BORDER CONTENT GRID SEDE
 
 .scroll-down {
   position: relative;
-  top: 292px;
+  top: 307px;
 }
 
 nav a .active {

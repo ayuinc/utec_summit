@@ -5,9 +5,13 @@ html,
 body {
   background-color: $body-bg;
   font-family:"proxima-nova";
+  line-height: 1;
   // &::-webkit-scrollbar { 
   //   display: none; 
   // }
+}
+p , span {
+  line-height: 1.2;
 }
 .site-wrapper,
 .site-content {
@@ -304,7 +308,7 @@ BORDER CONTENT GRID SEDE
   }
 .scroll-down{
   position: relative;
-  top: 292px;
+  top: 307px;
 }
 nav a {
    .active{
