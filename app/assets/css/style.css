@@ -3709,12 +3709,6 @@ a {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-#modal span {
-  display: block;
-  margin-top: 7%;
-  font-size: 3em;
-}
-
 #close {
   color: #FF6633;
   position: absolute;
