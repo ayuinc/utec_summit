@@ -5,9 +5,9 @@ html,
 body {
   background-color: $body-bg;
   font-family:"proxima-nova";
-  &::-webkit-scrollbar { 
-    display: none; 
-  }
+  // &::-webkit-scrollbar { 
+  //   display: none; 
+  // }
 }
 .site-wrapper,
 .site-content {
@@ -15,6 +15,7 @@ body {
 }
 a{
   text-decoration: none;
+  cursor: pointer;
 }
 /*LOGOS HEADER*/
 .logo > a > img{

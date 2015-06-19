@@ -1006,10 +1006,6 @@ body {
   background-color: #fff;
   font-family: "proxima-nova";
 }
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  display: none;
-}
 
 .site-wrapper,
 .site-content {
@@ -1018,6 +1014,7 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*LOGOS HEADER*/
