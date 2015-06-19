@@ -6,7 +6,6 @@
   <meta name="keywords" content=""> 
   <meta name="author" content="@MadeByGus">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="shortcut icon" href="assets/img/favicon.png">
   <script src="//use.typekit.net/lyo2nps.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
@@ -27,8 +26,8 @@
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content" style="border-radius: 0px !important;">
-        <div class="modal-header" style="border-bottom: none;">
-          <button type="button" class="close text-danger fw-100 font-s-10 text-uppercase" data-dismiss="modal" style="opacity:1;">cerrar <span class="font-s-14">&times;</span></button>
+        <div class="modal-header text-right" style="border-bottom: none;">
+          <a  class="close text-danger fw-100 font-s-10 text-uppercase" data-dismiss="modal" style="opacity:1;">cerrar <span class="font-s-14">&times;</span></a>
         </div>
         <div class="modal-body" style="left: 10px;">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.6653994170783!2d-77.02152415!3d-12.13503095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7fcaea4a133%3A0xb86fbddb0dc89e2e!2sUniversidad+de+Ingenier%C3%ADa+y+Tecnolog%C3%ADa!5e0!3m2!1ses!2spe!4v1434575418057" width="550" height="350" frameborder="0" style="border:0"></iframe>
@@ -48,8 +47,43 @@
       </div>
     </div>
   </div> 
+  <!--Modal Contacto-->
+  <section>
+    <div class="modal-bg text-center fade">
+      <div id="modal">
+        <a href="#close" id="close" style="opacity:1;"><span class="text-uppercase text-danger font-s-20">&times;</span></a>     
+        <h3 class="text-gray-darker normalize-text fw-900">Contáctanos</h3>
+        <p class=" subtitle-res text-gray thin text-center font-s-12"> Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> quam natus laboriosam accusantium inventore voluptate.</p>
+        <div>
+          <div class="row" class="container-md">
+            <div class="col-sm-3"></div>  
+            <div class="col-sm-6 mb-21 text-gray">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Nombres:</div>
+              <input class=" input-contacto" type="text" placeholder=""> 
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Apellido Paterno:</div>
+              <input class=" input-contacto" type="text" placeholder=""> 
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Apellido Materno:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Email:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Teléfono Móvil:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Consulta:</div>
+              <textarea class="area-custom-popup" name="" id="" cols="30" rows="10"></textarea>
+              <a href="" type="submit" name="submit" class="mv-7 btn btn-danger light text-uppercase font-s-14">Enviar <img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></a>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-12"> 
+              <p class="text-gray font-s-12">Al hacer clic en enviar el usuario acepta las <a class="text-danger font-s-12" href="">condiciones de uso</a></p>
+              <p class="pt-70 subtitle-res text-gray thin text-center font-s-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>    
   <div class="site-wrapper"> <!-- Body -->
-  <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white w-100" >
+    <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white w-100" >
       <div class="container">
         <div class="row">
           <div class="header-left col-sm-2 text-center pt-21">
@@ -65,7 +99,7 @@
               <a class="thin" href="Sede_site.html">Sede</a>
               <a class="thin" href="Engage_site.html">Engage</a>
               <a class="thin" href="Prensa_site.html">Prensa</a>
-              <a class=" thin btn btn-danger"href="">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""> </a>
+              <button class="btn-in thin btn btn-danger" id="btn-contacto">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></button>
             </nav>
           </div>
             <div class="header-right col-sm-2"> 
@@ -92,7 +126,7 @@
               <a class="thin" href="Sede_site.html">Sede</a>
               <a class="thin" href="Engage_site.html">Engage</a>
               <a class="thin" href="Prensa_site.html">Prensa</a>
-              <a class=" thin btn btn-danger"href="">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""> </a>
+              <button class="btn-in thin btn btn-danger" id="btn-contacto">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></button>         
             </nav>
           </div>
             <div class="header-right col-sm-2"> 
@@ -108,7 +142,7 @@
         <div class="col-sm-6">
           <div class="col-sm-4"></div>
           <div class="col-sm-8 pv-35">
-             <h4 class="pt-70 text-uppercase fw-100 text-center text-gray ">Sede</h4>
+             <h4 class="pt-70 text-uppercase bold text-center text-gray ">Sede</h4>
              <p class="text-center font-s-30 fw-900">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
              <p class="text-center text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda asperiores quis debitis vitae, doloribus aliquam aut velit deserunt sit corporis modi facere, ipsum sapiente et sequi, eius praesentium adipisci placeat.</p>
           </div>
@@ -120,8 +154,8 @@
       <div class="container-sm">
         <h2 class="text-gray-dark light fw-600">El campus de UTEC de Barranco</h2>
         <p class="font-s-18 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
-        <div class="row pt-49 pl-14 pr-14">
-          <div class="col-md-5 col-xs-12 col-sm-12 pr-0 bg-img-block mb-28 h-240"> 
+        <div class="row pv-49 pl-14 pr-14">
+          <div class="col-md-6 col-xs-12 col-sm-12 pr-0 bg-img-block mb-28 h-240"> 
             <div class="row pv-49">
               <div class="overlay-carousel-sede absolute"></div>
               <div class="col-sm-12">
@@ -173,8 +207,8 @@
               </div>
             </div>          
           </div>
-          <div class="col-md-7 col-xs-12 col-sm-12  content-text-blog-border  pl-0 bg-white">
-            <div class="text-left pl-42 pr-56">
+          <div class="col-md-6 col-xs-12 col-sm-12  content-text-blog-border  pl-0 bg-white">
+            <div class="text-left pl-21 pr-42">
               <h3 class="text-gray-dark fw-600 pt-14"><a href="#">Subtítulo del Articulo</a></h3>
               <p class="text-gray thin font-s-14 pt-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciun, Lorem ipsum dolor sit amet, consectetur adipisicing elit. !Architecto a, iure ducimus non! Repudiandae labore praesentium totam.</p>
               <a class="font-s-13 text-danger text-uppercase" href="">lee más <span>&#8594;</span></a>
@@ -220,8 +254,8 @@
         <a class="btn-in font-s-13 text-danger text-uppercase" data-toggle="modal" data-target="#myModal">ver mapa<span>&#8594;</span></a> 
         <h2 class="text-gray-dark light fw-600">Zona de Barranco</h2>
         <p class="font-s-18 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p> 
-        <div class="row pt-49 pl-14 pr-14">
-          <div class="col-md-5 col-xs-12 col-sm-12 pr-0 bg-img-block mb-28 h-240"> 
+        <div class="row pv-49 pl-14 pr-14">
+          <div class="col-md-6 col-xs-12 col-sm-12 pr-0 bg-img-block mb-28 h-240"> 
             <div class="row pv-49">
               <div class="overlay-carousel-sede absolute"></div>
               <div class="col-sm-12">
@@ -273,8 +307,8 @@
               </div>
             </div>          
           </div>
-          <div class="col-md-7 col-xs-12 col-sm-12  content-text-blog-border  pl-0 bg-white">
-            <div class="text-left pl-42 pr-56">
+          <div class="col-md-6 col-xs-12 col-sm-12  content-text-blog-border  pl-0 bg-white">
+            <div class="text-left pl-21 pr-42">
               <h3 class="text-gray-dark fw-600 pt-14"><a href="#">Subtítulo del Articulo</a></h3>
               <p class="text-gray thin font-s-14 pt-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciun, Lorem ipsum dolor sit amet, consectetur adipisicing elit. !Architecto a, iure ducimus non! Repudiandae labore praesentium totam.</p>
               <a class="font-s-13 text-danger text-uppercase" href="">lee más <span>&#8594;</span></a>

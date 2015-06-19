@@ -73,7 +73,7 @@ a{
 .bg-img-block-home{
   @extend .bg-img-block;
   height: 495px !important;  
-}  
+} 
 /*BORDER BTN KIT/ POST-EVENTO*/
 .btn-cta-post-evento,
 .btn-kit-prensa{
@@ -123,7 +123,7 @@ a{
 }
 /*Formula para height*/
 
-@for $i from 1 through 300{
+@for $i from 1 through 400{
   .h-#{$i*1} {
     height : (1px*$i)!important;
   }
@@ -266,12 +266,12 @@ BORDER CONTENT GRID SEDE
   width: 598px;
   height: 118px;
 }
-.overlay-carousel-sede{
+.overlay-carousel-sede {
   background-color: rgba(0, 208, 255, 0.19);
   z-index: 2;
-  top: 162px;
-  left: 13px;
-  width: 291px;
+  top: 170px;
+  left: 30px;
+  width: 306px;
   height: 68px;
 }
 .carousel-control .glyphicon-chevron-left,
@@ -305,6 +305,12 @@ BORDER CONTENT GRID SEDE
   position: relative;
   top: 292px;
 }
+nav a {
+   .active{
+      color:black;
+  }
+}
+
 /* AddThisEvent theme CSS -- AGENDA SECTION
 ---------------------------------------------------------------------- */
 
@@ -340,8 +346,6 @@ $position: fixed relative absolute static;
 /*
  POP UP
 */
-/*LOG IN */
-
 a{
     outline: 0;
     text-decoration: none;
@@ -349,71 +353,25 @@ a{
 .modal-bg{
     display: none;
     position:fixed;
-    left:0;right:0;
-    top:0;bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
     z-index:100;
     background-color:rgba(50,50,50,0.5);
 }
-.form-in{
-    display:block;
-}
-.form-in *{
-    margin:10px;
-}
-.casilla:focus{
-    border:2px solid #28C5E6;
-    outline:0;
-}
-.casilla {
-    width:347px;
-    padding:7px;
-    border:2px solid #ccc ;
-    border-radius:3px;
-    right: 4%;
-}
-.boton-ingreso {
-  float: right;
-  padding: 8px 12px;
-  margin-top: 15px;
-  background: #28C5E6;
-  border: none;
-  color: #fff;
-  font-size: 1.2em;
-  border-radius: 11px;
-  cursor: pointer;
-  position: relative;
-  left: 1%;
-}
-.boton-ingreso:hover{
-    background-color: #28C5E6;
-}
-#forgot-link{
-  font-size: 1.3em;
-  font-weight: 200;
-  line-height: 1.5em;
-  position: relative;
-  top: -21px;
-  right: 23%;
-  color: #8B8B8B;
-  display: inline-block;
-}
-#forgot-link:hover{
-    color:#28C5E6;
-}
 #modal{ 
-    display: none;
-    position:absolute;
-    background-color: white;
-    top:37%; 
-    left:43%;
-    z-index:101;
-    border-radius:6%;
-    width:527px;
-    height:416px;
-    margin-top:-130px;
-    margin-left:-170px;
-    border: 5px solid #8C8987;
-    box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 28%;
+  left: 43%;
+  z-index: 101;
+  width: 540px;
+  height: 653px;
+  margin-top: -174px;
+  margin-left: -170px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 #modal span{
     display: block;
@@ -421,14 +379,11 @@ a{
     font-size: 3em;
 }
 #close{
-  color: #343434;
-  font-family: serif;
-  font-size: 23px;
-  font-weight: bold;
+  color: #FF6633;
   position: absolute;
-  left: 95%;
+  left: 94%;
+  top: 12px;
   z-index: 5;
-  top: 8px;
 }
 #close:hover{
     color: gray;
@@ -440,6 +395,14 @@ a{
   top: 76.6%;
   left: 49%;
   font-size: 1.3em;
+}
+.input-contacto{
+  height: 26px;
+  width: 240px;
+}
+.area-custom-popup{
+  width: 240px;
+  height: 100px;
 }
 /*
   Media queries

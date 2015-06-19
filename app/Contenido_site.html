@@ -7,7 +7,6 @@
   <meta name="author" content="@MadeByGus">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="assets/img/favicon.png">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="//use.typekit.net/lyo2nps.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
@@ -41,8 +40,43 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+ <!--Modal Contacto-->
+  <section>
+    <div class="modal-bg text-center fade">
+      <div id="modal">
+        <a href="#close" id="close" style="opacity:1;"><span class="text-uppercase text-danger font-s-20">&times;</span></a>     
+        <h3 class="text-gray-darker normalize-text fw-900">Contáctanos</h3>
+        <p class=" subtitle-res text-gray thin text-center font-s-12"> Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> quam natus laboriosam accusantium inventore voluptate.</p>
+        <div>
+          <div class="row" class="container-md">
+            <div class="col-sm-3"></div>  
+            <div class="col-sm-6 mb-21 text-gray">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Nombres:</div>
+              <input class=" input-contacto" type="text" placeholder=""> 
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Apellido Paterno:</div>
+              <input class=" input-contacto" type="text" placeholder=""> 
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Apellido Materno:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Email:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Teléfono Móvil:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Consulta:</div>
+              <textarea class="area-custom-popup" name="" id="" cols="30" rows="10"></textarea>
+              <a href="" type="submit" name="submit" class="mv-7 btn btn-danger light text-uppercase font-s-14">Enviar <img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></a>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-12"> 
+              <p class="text-gray font-s-12">Al hacer clic en enviar el usuario acepta las <a class="text-danger font-s-12" href="">condiciones de uso</a></p>
+              <p class="pt-70 subtitle-res text-gray thin text-center font-s-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>    
   <div class="site-wrapper"> <!-- Body -->
-  <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white w-100" >
+    <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white w-100" >
       <div class="container">
         <div class="row">
           <div class="header-left col-sm-2 text-center pt-21">
@@ -58,7 +92,7 @@
               <a class="thin" href="Sede_site.html">Sede</a>
               <a class="thin" href="Engage_site.html">Engage</a>
               <a class="thin" href="Prensa_site.html">Prensa</a>
-              <a class=" thin btn btn-danger"href="">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""> </a>
+              <button class="btn-in thin btn btn-danger" id="btn-contacto">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></button>
             </nav>
           </div>
             <div class="header-right col-sm-2"> 
@@ -85,7 +119,7 @@
               <a class="thin" href="Sede_site.html">Sede</a>
               <a class="thin" href="Engage_site.html">Engage</a>
               <a class="thin" href="Prensa_site.html">Prensa</a>
-              <a class=" thin btn btn-danger"href="">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""> </a>
+              <button class="btn-in thin btn btn-danger" id="btn-contacto">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></button>
             </nav>
           </div>
             <div class="header-right col-sm-2"> 

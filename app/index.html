@@ -7,7 +7,6 @@
   <meta name="author" content="@MadeByGus">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="assets/img/favicon.png">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">  
   <script src="//use.typekit.net/lyo2nps.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
@@ -41,8 +40,43 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+ <!--Modal Contacto-->
+  <section>
+    <div class=" fade modal-bg text-center">
+      <div id="modal">
+        <a href="#close" id="close" style="opacity:1;"><span class="text-uppercase text-danger font-s-20">&times;</span></a>     
+        <h3 class="text-gray-darker normalize-text fw-900">Contáctanos</h3>
+        <p class=" subtitle-res text-gray thin text-center font-s-12"> Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> quam natus laboriosam accusantium inventore voluptate.</p>
+        <div>
+          <div class="row" class="container-md">
+            <div class="col-sm-3"></div>  
+            <div class="col-sm-6 mb-21 text-gray">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Nombres:</div>
+              <input class=" input-contacto" type="text" placeholder=""> 
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Apellido Paterno:</div>
+              <input class=" input-contacto" type="text" placeholder=""> 
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Apellido Materno:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Email:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Teléfono Móvil:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Consulta:</div>
+              <textarea class="area-custom-popup" name="" id="" cols="30" rows="10"></textarea>
+              <a href="" type="submit" name="submit" class="mv-7 btn btn-danger light text-uppercase font-s-14">Enviar <img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></a>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-12"> 
+              <p class="text-gray font-s-12">Al hacer clic en enviar el usuario acepta las <a class="text-danger font-s-12" href="">condiciones de uso</a></p>
+              <p class="pt-70 subtitle-res text-gray thin text-center font-s-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>    
   <div class="site-wrapper"> <!-- Body -->
-  <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white w-100" >
+    <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white w-100" >
       <div class="container">
         <div class="row">
           <div class="header-left col-sm-2 text-center pt-21">
@@ -58,7 +92,7 @@
               <a class="thin" href="Sede_site.html">Sede</a>
               <a class="thin" href="Engage_site.html">Engage</a>
               <a class="thin" href="Prensa_site.html">Prensa</a>
-              <a class="popup thin btn btn-danger"href="">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""> </a>
+              <button class="btn-in thin btn btn-danger" id="btn-contacto">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></button>           
             </nav>
           </div>
             <div class="header-right col-sm-2"> 
@@ -85,7 +119,7 @@
               <a class="thin" href="Sede_site.html">Sede</a>
               <a class="thin" href="Engage_site.html">Engage</a>
               <a class="thin" href="Prensa_site.html">Prensa</a>
-              <a class="popup thin btn btn-danger"href="">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""> </a>
+              <button class="btn-in thin btn btn-danger" id="btn-contacto">CONTACTO<img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></button>
             </nav>
           </div>
             <div class="header-right col-sm-2"> 
@@ -103,8 +137,7 @@
           <div class="col-sm-8 pv-35 text-right">
              <h4 class="pt-70 text-uppercase fw-900 text-center text-danger">SIMUL QUEDAM</h4>
              <p class="text-center font-s-40   fw-900">Sed partem partiendo ommitantur ei. Aliquip eloquentiam</p>
-             <div class="col-sm-1"></div>
-             <div class="col-sm-10 text-center">
+             <div class="col-sm-12 text-center">
               <p class="text-center font-s-16 text-gray">Únete a el evento este 3 de Julio 2015 en Lima Perú</p>
              </div>
           </div>
@@ -182,51 +215,69 @@
         </div>
         <div class="scroll-down relative" style="top: 50px;">
           <div>
-            <a id="arrow" class="arrow" href="#blog-post"><img src="assets/icons/scrolldown.png" alt=""></a>
+            <a id="arrow" class="arrow" href="#venue"><img src="assets/icons/scrolldown.png" alt=""></a>
           </div>
         </div>
       </div>
     </section>    
-    <section class="pv-70">
-      <div class="row pv-49">                  
-      </div> 
+    <section class="pv-70" id="venue">
+      <div class="container-sm text-center">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10"> 
+            <h2 class="fw-600">Venue</h2>
+            <p class="font-s-18 pt-14 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga numquam officia cum veritatis nam repellat, voluptatibus deserunt perferendis vel! Sequi iste, veniam.</p>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>   
+        <div class="row pv-42 text-gray-lighter">
+          <div class="col-sm-6 bg-img-block-center h-340" style="background-image: url(assets/img/campus-home.png)"></div>       
+          <div class="col-sm-6 bg-img-block">
+            <div>
+              <div class="col-sm-6 h-160 bg-img-block-center" style="background-image: url(assets/img/campus-home.png)"></div>
+              <div class="col-sm-6 h-160 bg-danger">
+                <h5 class="fw-600 pt-14"><a href="#">Campus de Barranco</a></h5>
+                <p class="thin font-s-14 pt-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                  
+              </div>
+            </div>
+            <div class="col-sm-12 pv-14"></div>
+            <div>
+              <div class="col-sm-6 h-160 bg-img-block-center" style="background-image: url(assets/img/campus-home.png)"></div>
+              <div class="col-sm-6 h-160 bg-danger">
+                <h5 class="fw-600 pb-14"><a href="#">Campus de Barranco</a></h5>
+                <p class="thin font-s-14 pb-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                  
+              </div>
+            </div>            
+          </div>  
+          <div class="col-sm-12 pt-42">
+            <a class="font-s-13 text-danger text-uppercase" href="">ver más <span>&#8594;</span></a>            
+          </div>                                       
+        </div>
+      </div>  
     </section>
-    <section class="bg-danger" id="blog-post">
-      <div class="container-md">
-        <div class="row text-center pv-70">
-          <div class="col-sm-4 pt-21">
-            <div class="img-grid-blog-post">
-              <img src="assets/icons/❝.png" alt="">
-            </div>
-            <hr class="w-80">  
-            <div class="texto text-white pr-35 pl-35">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita, quibusdam reiciendis mollitia incidunt omnis molestiae odit ea architecto, quidem dolor. Veniam atque eos, quasi reiciendis dolor exercitationem cum corporis?</p>
-            </div>
-            <hr class="w-80">  
+    <section class="bg-gray-lighter pv-56">
+      <div class="row text-center pb-14">
+        <h2 class="text-gray-dark fw-700">Siguenos en Facebook y Twitter</h2>
+        <p class="text-gray-dark font-s-25 fw-600">#sumatec</p>
+        <div class="col-sm-6 pv-21 mt-14 text-right">
+          <a class="twitter-timeline" href="https://twitter.com/hashtag/sumatec" data-widget-id="608407854073147392">#sumatec Tweets</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
-          <div class="col-sm-4 pt-21">
-            <div class="img-grid-blog-post">
-              <img src="assets/icons/❝.png" alt="">
+          <div class="col-sm-6 pv-21 mt-14 text-left">
+            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="290" data-height="400" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+              <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Cap&#039;n Facebook</a></blockquote>
+              </div>
             </div>
-            <hr class="w-80">  
-            <div class="texto text-white pr-35 pl-35">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsam aliquam excepturi quaerat laborum perferendis deserunt assumenda veritatis aut saepe nemo fugit, impedit molestias expedita error ratione quia quis quasi.</p>
-            </div>
-            <hr class="w-80">  
           </div>
-          <div class="col-sm-4 pt-21">
-            <div class="img-grid-blog-post">
-              <img src="assets/icons/❝.png" alt="">
-            </div>
-            <hr class="w-80">  
-            <div class="texto text-white pr-35 pl-35">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsam aliquam excepturi quaerat laborum perferendis deserunt assumenda veritatis aut saepe nemo fugit, impedit molestias expedita error ratione quia quis quasi.</p>
-            </div>
-            <hr class="w-80">  
+        </div>
+        <div class="scroll-down relative text-center" style="top: 40px;">
+          <div>
+            <a id="arrow" class="arrow" href="#colaboradores"><img src="assets/icons/scrolldown.png" alt=""></a>
           </div>
         </div>
       </div>
-    </section>
+    </section> 
     <section class="section-colaboradores pv-70" id="colaboradores">
       <div class="container text-center pv-21">
         <h2 class="fw-900 text-gray-darker">Colaboradores</h2>
@@ -363,6 +414,12 @@
             }
           });
      });
+  </script>
+  <script>
+    $('#nav a').click(function() {
+        $('#nav a').not(this).removeClass('active');
+        $(this).addClass('active');
+    });
   </script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f279493184b19f" async="async"></script>
 </html>

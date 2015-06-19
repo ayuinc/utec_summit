@@ -10,6 +10,30 @@
 	EBM Variables
 */
 /* PROJECT ESPECIFIC FONTS */
+.thin {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.light {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.medium {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bold {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .container-fluid {
   width: 100%;
 }
@@ -2514,6 +2538,406 @@ a {
   height: 300px !important;
 }
 
+.h-301 {
+  height: 301px !important;
+}
+
+.h-302 {
+  height: 302px !important;
+}
+
+.h-303 {
+  height: 303px !important;
+}
+
+.h-304 {
+  height: 304px !important;
+}
+
+.h-305 {
+  height: 305px !important;
+}
+
+.h-306 {
+  height: 306px !important;
+}
+
+.h-307 {
+  height: 307px !important;
+}
+
+.h-308 {
+  height: 308px !important;
+}
+
+.h-309 {
+  height: 309px !important;
+}
+
+.h-310 {
+  height: 310px !important;
+}
+
+.h-311 {
+  height: 311px !important;
+}
+
+.h-312 {
+  height: 312px !important;
+}
+
+.h-313 {
+  height: 313px !important;
+}
+
+.h-314 {
+  height: 314px !important;
+}
+
+.h-315 {
+  height: 315px !important;
+}
+
+.h-316 {
+  height: 316px !important;
+}
+
+.h-317 {
+  height: 317px !important;
+}
+
+.h-318 {
+  height: 318px !important;
+}
+
+.h-319 {
+  height: 319px !important;
+}
+
+.h-320 {
+  height: 320px !important;
+}
+
+.h-321 {
+  height: 321px !important;
+}
+
+.h-322 {
+  height: 322px !important;
+}
+
+.h-323 {
+  height: 323px !important;
+}
+
+.h-324 {
+  height: 324px !important;
+}
+
+.h-325 {
+  height: 325px !important;
+}
+
+.h-326 {
+  height: 326px !important;
+}
+
+.h-327 {
+  height: 327px !important;
+}
+
+.h-328 {
+  height: 328px !important;
+}
+
+.h-329 {
+  height: 329px !important;
+}
+
+.h-330 {
+  height: 330px !important;
+}
+
+.h-331 {
+  height: 331px !important;
+}
+
+.h-332 {
+  height: 332px !important;
+}
+
+.h-333 {
+  height: 333px !important;
+}
+
+.h-334 {
+  height: 334px !important;
+}
+
+.h-335 {
+  height: 335px !important;
+}
+
+.h-336 {
+  height: 336px !important;
+}
+
+.h-337 {
+  height: 337px !important;
+}
+
+.h-338 {
+  height: 338px !important;
+}
+
+.h-339 {
+  height: 339px !important;
+}
+
+.h-340 {
+  height: 340px !important;
+}
+
+.h-341 {
+  height: 341px !important;
+}
+
+.h-342 {
+  height: 342px !important;
+}
+
+.h-343 {
+  height: 343px !important;
+}
+
+.h-344 {
+  height: 344px !important;
+}
+
+.h-345 {
+  height: 345px !important;
+}
+
+.h-346 {
+  height: 346px !important;
+}
+
+.h-347 {
+  height: 347px !important;
+}
+
+.h-348 {
+  height: 348px !important;
+}
+
+.h-349 {
+  height: 349px !important;
+}
+
+.h-350 {
+  height: 350px !important;
+}
+
+.h-351 {
+  height: 351px !important;
+}
+
+.h-352 {
+  height: 352px !important;
+}
+
+.h-353 {
+  height: 353px !important;
+}
+
+.h-354 {
+  height: 354px !important;
+}
+
+.h-355 {
+  height: 355px !important;
+}
+
+.h-356 {
+  height: 356px !important;
+}
+
+.h-357 {
+  height: 357px !important;
+}
+
+.h-358 {
+  height: 358px !important;
+}
+
+.h-359 {
+  height: 359px !important;
+}
+
+.h-360 {
+  height: 360px !important;
+}
+
+.h-361 {
+  height: 361px !important;
+}
+
+.h-362 {
+  height: 362px !important;
+}
+
+.h-363 {
+  height: 363px !important;
+}
+
+.h-364 {
+  height: 364px !important;
+}
+
+.h-365 {
+  height: 365px !important;
+}
+
+.h-366 {
+  height: 366px !important;
+}
+
+.h-367 {
+  height: 367px !important;
+}
+
+.h-368 {
+  height: 368px !important;
+}
+
+.h-369 {
+  height: 369px !important;
+}
+
+.h-370 {
+  height: 370px !important;
+}
+
+.h-371 {
+  height: 371px !important;
+}
+
+.h-372 {
+  height: 372px !important;
+}
+
+.h-373 {
+  height: 373px !important;
+}
+
+.h-374 {
+  height: 374px !important;
+}
+
+.h-375 {
+  height: 375px !important;
+}
+
+.h-376 {
+  height: 376px !important;
+}
+
+.h-377 {
+  height: 377px !important;
+}
+
+.h-378 {
+  height: 378px !important;
+}
+
+.h-379 {
+  height: 379px !important;
+}
+
+.h-380 {
+  height: 380px !important;
+}
+
+.h-381 {
+  height: 381px !important;
+}
+
+.h-382 {
+  height: 382px !important;
+}
+
+.h-383 {
+  height: 383px !important;
+}
+
+.h-384 {
+  height: 384px !important;
+}
+
+.h-385 {
+  height: 385px !important;
+}
+
+.h-386 {
+  height: 386px !important;
+}
+
+.h-387 {
+  height: 387px !important;
+}
+
+.h-388 {
+  height: 388px !important;
+}
+
+.h-389 {
+  height: 389px !important;
+}
+
+.h-390 {
+  height: 390px !important;
+}
+
+.h-391 {
+  height: 391px !important;
+}
+
+.h-392 {
+  height: 392px !important;
+}
+
+.h-393 {
+  height: 393px !important;
+}
+
+.h-394 {
+  height: 394px !important;
+}
+
+.h-395 {
+  height: 395px !important;
+}
+
+.h-396 {
+  height: 396px !important;
+}
+
+.h-397 {
+  height: 397px !important;
+}
+
+.h-398 {
+  height: 398px !important;
+}
+
+.h-399 {
+  height: 399px !important;
+}
+
+.h-400 {
+  height: 400px !important;
+}
+
 /*Formula para weight*/
 .fw-100 {
   font-weight: 100 !important;
@@ -3051,9 +3475,9 @@ BORDER CONTENT GRID SEDE
 .overlay-carousel-sede {
   background-color: rgba(0, 208, 255, 0.19);
   z-index: 2;
-  top: 162px;
-  left: 13px;
-  width: 291px;
+  top: 170px;
+  left: 30px;
+  width: 306px;
   height: 68px;
 }
 
@@ -3091,6 +3515,10 @@ BORDER CONTENT GRID SEDE
 .scroll-down {
   position: relative;
   top: 292px;
+}
+
+nav a .active {
+  color: black;
 }
 
 /* AddThisEvent theme CSS -- AGENDA SECTION
@@ -3251,7 +3679,6 @@ BORDER CONTENT GRID SEDE
 /*
  POP UP
 */
-/*LOG IN */
 a {
   outline: 0;
   text-decoration: none;
@@ -3268,73 +3695,17 @@ a {
   background-color: rgba(50, 50, 50, 0.5);
 }
 
-.form-in {
-  display: block;
-}
-
-.form-in * {
-  margin: 10px;
-}
-
-.casilla:focus {
-  border: 2px solid #28C5E6;
-  outline: 0;
-}
-
-.casilla {
-  width: 347px;
-  padding: 7px;
-  border: 2px solid #ccc;
-  border-radius: 3px;
-  right: 4%;
-}
-
-.boton-ingreso {
-  float: right;
-  padding: 8px 12px;
-  margin-top: 15px;
-  background: #28C5E6;
-  border: none;
-  color: #fff;
-  font-size: 1.2em;
-  border-radius: 11px;
-  cursor: pointer;
-  position: relative;
-  left: 1%;
-}
-
-.boton-ingreso:hover {
-  background-color: #28C5E6;
-}
-
-#forgot-link {
-  font-size: 1.3em;
-  font-weight: 200;
-  line-height: 1.5em;
-  position: relative;
-  top: -21px;
-  right: 23%;
-  color: #8B8B8B;
-  display: inline-block;
-}
-
-#forgot-link:hover {
-  color: #28C5E6;
-}
-
 #modal {
   display: none;
   position: absolute;
   background-color: white;
-  top: 37%;
+  top: 28%;
   left: 43%;
   z-index: 101;
-  border-radius: 6%;
-  width: 527px;
-  height: 416px;
-  margin-top: -130px;
+  width: 540px;
+  height: 653px;
+  margin-top: -174px;
   margin-left: -170px;
-  border: 5px solid #8C8987;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -3345,14 +3716,11 @@ a {
 }
 
 #close {
-  color: #343434;
-  font-family: serif;
-  font-size: 23px;
-  font-weight: bold;
+  color: #FF6633;
   position: absolute;
-  left: 95%;
+  left: 94%;
+  top: 12px;
   z-index: 5;
-  top: 8px;
 }
 
 #close:hover {
@@ -3366,6 +3734,16 @@ a {
   top: 76.6%;
   left: 49%;
   font-size: 1.3em;
+}
+
+.input-contacto {
+  height: 26px;
+  width: 240px;
+}
+
+.area-custom-popup {
+  width: 240px;
+  height: 100px;
 }
 
 /*
