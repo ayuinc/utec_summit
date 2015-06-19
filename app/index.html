@@ -7,9 +7,75 @@
   <meta name="author" content="@MadeByGus">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="assets/img/favicon.png">
+  <script src="//use.typekit.net/lyo2nps.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
   <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
   <link href="assets/css/ebm.css" rel="stylesheet">
-  
+  <!-- AddThisEvent theme css -->
+  <link rel="stylesheet" href="css/addthisevent.theme2.css" type="text/css" media="screen" />
+
+  <!-- AddThisEvent -->
+  <script type="text/javascript" src="https://addthisevent.com/libs/ate-latest.min.js"></script>
+
+  <!-- AddThisEvent Settings -->
+  <script type="text/javascript">
+  addthisevent.settings({
+    license    : "replace-with-your-licensekey",
+    css        : false,
+    outlook    : {show:true, text:"Outlook Calendar"},
+    google     : {show:true, text:"Google Calendar"},
+    yahoo      : {show:true, text:"Yahoo Calendar"},
+    outlookcom : {show:true, text:"Outlook.com"},
+    appleical  : {show:true, text:"Apple iCalendar"},
+    dropdown   : {order:"appleical,google,outlook,outlookcom,yahoo"}
+  });
+  </script>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_PI/sdk.js#xfbml=1&version=v2.3&appId=282181671834587";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+ <!--Modal Contacto-->
+  <section>
+    <div class=" fade modal-bg text-center">
+      <div id="modal">
+        <button href="#close" id="close" style="opacity:1;"><span class="text-uppercase text-danger font-s-20">&times;</span></button>     
+        <h3 class="text-gray-darker normalize-text fw-900">Contáctanos</h3>
+        <p class=" subtitle-res text-gray thin text-center font-s-12"> Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> quam natus laboriosam accusantium inventore voluptate.</p>
+        <div>
+          <div class="row" class="container-md">
+            <div class="col-sm-3"></div>  
+            <div class="col-sm-6 text-gray mb-14">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Nombres:</div>
+              <input class=" input-contacto" type="text" placeholder=""> 
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Apellido Paterno:</div>
+              <input class=" input-contacto" type="text" placeholder=""> 
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Apellido Materno:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Email:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Teléfono Móvil:</div>
+              <input class=" input-contacto" type="text" placeholder="">
+              <div class="col-sm-12 text-left pb-7 pt-14 pl-0">Consulta:</div>
+              <textarea class="area-custom-popup" name="" id="" cols="30" rows="10"></textarea>
+              <a href="" type="submit" name="submit" class="mv-7 btn btn-danger light text-uppercase font-s-14">Enviar <img class="icon-cta"src="assets/icons/icono-call-to-action.png" alt=""></a>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-12"> 
+              <p class="text-gray font-s-12">Al hacer clic en enviar el usuario acepta las <a class="text-danger font-s-12" href="">Condiciones de uso</a></p>
+              <p class="text-gray thin text-center font-s-11 mb-14"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> lorem ipsum dolor sit amet, consectetur.</p>
+              <a class="font-s-11 text-danger text-uppercase" href="">registrate aquí <span class="text-danger">&#8594;</span></a>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>    
   <div class="site-wrapper"> <!-- Body -->
     <header class="header-scroll header hidden-xs hidden-sm minh-70 pv-14 bg-white w-100" >
       <div class="container">
@@ -332,4 +398,29 @@
   </div>
   <script src="assets/js/jquery.min.js"></script> <!-- App scripts -->
   <script src="assets/js/scripts.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+     $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+     });
+  </script>
+  <script>
+    $('#nav a').click(function() {
+        $('#nav a').not(this).removeClass('active');
+        $(this).addClass('active');
+    });
+  </script>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f279493184b19f" async="async"></script>
 </html>
