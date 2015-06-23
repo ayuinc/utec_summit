@@ -96,18 +96,20 @@ a{
   height: 400px !important;
 }
 /*TWITTER PLUG-IN*/
-#twitter-widget-12,
-#twitter-widget-4,
-#twitter-widget-0{
+/*Formula Plug-in Twitter*/
+
+@for $i from 0 through 700{
+  #twitter-widget-#{$i*1} {
   border-radius: 0 !important;
   width:290px !important;
-}
+  }
+}  
 .root .timeline .ltr .customisable-border  .twitter-timeline .is-touch .twitter-timeline-rendered .var-narrow{
   width: 290px !important;
   border-radius: 0px !important;
 }
 .timeline{
-  border-radius: 0px !important;
+  border-radius: 0 !important;
 }
 .icon-profile-expositores{
   position: relative;
