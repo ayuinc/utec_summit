@@ -254,11 +254,11 @@
       <div class="row text-center pb-14">
         <h2 class="text-gray-dark fw-700">Siguenos en Facebook y Twitter</h2>
         <p class="text-gray-dark font-s-25 fw-600">#sumatec</p>
-        <div class="col-sm-6 pv-21 mt-14 text-right">
+        <div class="col-sm-6 pv-21 mt-14 text-right plugins-redes-sociales">
           <a class="twitter-timeline" href="https://twitter.com/hashtag/sumatec" data-widget-id="608407854073147392">#sumatec Tweets</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
-          <div class="col-sm-6 pv-21 mt-14 text-left">
+          <div class="col-sm-6 pv-21 mt-14 text-left plugins-redes-sociales">
             <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="290" data-height="400" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
               <div class="fb-xfbml-parse-ignore">
                 <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Cap&#039;n Facebook</a></blockquote>
@@ -317,8 +317,8 @@
     </div><!-- END: Body -->
     <div class="footer bg-gray-darker pv-28"> <!-- FOOTER -->
       <div class="container pv-70">
-        <div class="row pl-70 ml-35">
-          <div class="col-sm-3">
+        <div class="row pl-70 ml-35" id="redes-sociales">
+          <div class="col-sm-3 hidden-xs hidden-sm">
             <ul class="list-unstyled text-gray-lighter">
              <li class="title thin text-gray-lighter text-uppercase pb-14"><a href="#">Mapa del Sitio</a></li>
              <li><a href="#">Expositores</a></li>
@@ -344,7 +344,7 @@
               <p>Encuentra otras formas de seguirnos en nuestra sección de <a class="text-danger" href="">engage</a></p>
             </div>
           </div>
-          <div class="col-sm-3 text-gray-lighter pl-35 normalize-text">
+          <div class="col-sm-3 text-gray-lighter pl-35 normalize-text hidden-xs hidden-sm">
             <ul class="list-unstyled text-gray-lighter">
                <li class="title thin text-uppercase pb-14"><a href="#">Descargas</a></li>
                <li><a href="#">Brochure del Summit</a></li>
@@ -359,7 +359,7 @@
             <a href="#">educacuioejecutiva@utec.edu.pe</a>
             <a href="">www.utec.edu.pe</a>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 hidden-xs hidden-sm">
             <ul class="list-unstyled text-gray-lighter">
              <li class="title thin text-gray-lighter text-uppercase pb-14"><a href="#">Ediciones Anteriores</a></li>
              <li><a href="">2014</a></li>
@@ -372,7 +372,18 @@
     </div>  <!-- END:Footer -->
     <footer class="bg-gray">
       <div class="container-lg">
-        <div class="row">
+        <div class="hidden-md hidden-lg">
+          <div class="pv-21">
+            <div class="text-center">
+              <a href="index.html"><img class="logos-footer-gris" src="assets/icons/logo-suma-blanco-footer.png" alt="Logo Suma"></a>
+              <a class="ml-14" href="index.html"><img class="logos-footer-gris" src="assets/icons/logo-utec-blanco-footer.png" alt="Logo UTEC"></a>
+            </div>
+          </div>
+          <div class="text-center pv-28 text-white">
+            <p class="pt-49 font-s-13"><span>&#169;</span> Copyrights by <a href="">UTEC</a> 2015</p>
+          </div>
+        </div>      
+        <div class="row hidden-sm hidden-xs">
           <div class=" col-sm-2 text-center pv-28">
             <div class="logo-footer pl-56">
               <a href="index.html"><img src="assets/icons/logo-suma-blanco-footer.png" alt="Logo Suma"></a>

@@ -8469,27 +8469,90 @@ POP UP EXPOSITOR
   Media queries
 */
 @media only screen and (max-width: 480px) {
+  /*ARROW SCROLL*/
+  .scroll-down {
+    visibility: hidden;
+  }
+
+  /*PLUGIN REDES*/
+  .plugins-redes-sociales {
+    text-align: center !important;
+  }
+
   /*ENGAGE*/
-  .engage-section {
+  #engage-section {
     padding: 0px !important;
+    text-align: center;
+  }
+  #engage-section h3 {
+    font-size: 18px !important;
+  }
+  #engage-section p {
+    font-size: 15px !important;
+  }
+  #engage-section img {
+    padding-top: 14px;
+    padding-right: 0px;
+  }
+
+  #redes-sociales {
+    text-align: center;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+  #redes-sociales .col-sm-3 > ul > li > a {
+    font-size: 21px !important;
+  }
+
+  .logo-sponsors-home {
+    text-align: center;
+  }
+
+  .logo-sponsors-home > img {
+    width: 70%;
+    padding-bottom: 5px;
+  }
+
+  .logos-footer-gris {
+    width: 35%;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  /*ENGAGE*/
-  .engage-section {
-    padding: 0px !important;
+  /*ARROW SCROLL*/
+  .scroll-down {
+    visibility: hidden;
   }
-}
-@media only screen and (max-width: 768px) {
-  /*ENGAGE*/
-  .engage-section {
-    padding: 0px !important;
+
+  /*PLUGIN REDES*/
+  .plugins-redes-sociales {
+    text-align: center !important;
   }
-}
-@media only screen and (max-width: 992px) {
+
   /*ENGAGE*/
-  .engage-section {
-    padding: 0px !important;
+  #engage-section {
+    padding: 21px !important;
+    text-align: center;
+  }
+  #engage-section h3 {
+    font-size: 20px !important;
+  }
+
+  #redes-sociales {
+    text-align: center;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+  #redes-sociales .col-sm-3 > ul > li > a {
+    font-size: 21px !important;
+  }
+
+  .logo-sponsors-home {
+    text-align: center;
+  }
+
+  .logo-sponsors-home > img {
+    width: 70%;
+    padding-bottom: 5px;
   }
 }
 /* Prevent layout breakage on unsupporting browsers */

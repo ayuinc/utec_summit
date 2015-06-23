@@ -434,31 +434,85 @@ POP UP EXPOSITOR
 $xl-desktop: 1500px;
 $xxl-desktop: 1980px;
 @media #{$xs-only} {
+  /*ARROW SCROLL*/
+  .scroll-down{
+  visibility: hidden;
+  }
+  /*PLUGIN REDES*/
+  .plugins-redes-sociales{
+    text-align: center !important;
+  }
   /*ENGAGE*/
-  .engage-section{
+  #engage-section{
     padding: 0px !important;
-  }  
+    text-align: center;
+    h3{
+      font-size: 18px !important;
+    }
+    p{
+      font-size: 15px !important;
+    }
+    img{
+      padding-top: 14px;
+      padding-right: 0px;
+    }
+  }
+  #redes-sociales{
+    text-align: center;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    .col-sm-3 > ul > li > a{
+      font-size: 21px !important;
+    }
+  }
+  .logo-sponsors-home{
+    text-align: center;
+  }
+  .logo-sponsors-home > img {
+    width: 70%;
+    padding-bottom:5px;
+  }
+  .logos-footer-gris{
+    width: 35%;
+  }
 }
 @media #{$sm-only} {
+  /*ARROW SCROLL*/
+  .scroll-down{
+  visibility: hidden;
+  }
+  /*PLUGIN REDES*/
+  .plugins-redes-sociales{
+    text-align: center !important;
+  }
   /*ENGAGE*/
-  .engage-section{
-    padding: 0px !important;
+  #engage-section{
+    padding: 21px !important;
+    text-align: center;
+    h3{
+      font-size: 20px !important;
+    }
+  }
+  #redes-sociales{
+    text-align: center;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    .col-sm-3 > ul > li > a{
+      font-size: 21px !important;
+    }
+  }
+  .logo-sponsors-home{
+    text-align: center;
+  }
+  .logo-sponsors-home > img {
+    width: 70%;
+    padding-bottom: 5px;
   }
 }
 @media #{$md-only} {}
 @media #{$lg-only} {}
-@media #{$sm-down} {
-  /*ENGAGE*/
-  .engage-section{
-    padding: 0px !important;
-  }  
-}
-@media #{$md-down} {
-  /*ENGAGE*/
-  .engage-section{
-    padding: 0px !important;
-  }  
-}
+@media #{$sm-down} {}
+@media #{$md-down} {}
 @media #{$lg-down} {}
 @media #{$sm-up} {}
 @media #{$md-up} {}
