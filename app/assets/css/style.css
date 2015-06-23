@@ -8468,6 +8468,30 @@ POP UP EXPOSITOR
 /*
   Media queries
 */
+@media only screen and (max-width: 480px) {
+  /*ENGAGE*/
+  .engage-section {
+    padding: 0px !important;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  /*ENGAGE*/
+  .engage-section {
+    padding: 0px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /*ENGAGE*/
+  .engage-section {
+    padding: 0px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /*ENGAGE*/
+  .engage-section {
+    padding: 0px !important;
+  }
+}
 /* Prevent layout breakage on unsupporting browsers */
 html.no-js .flex-space-between:before, html.no-js .flex-space-between:after {
   content: " ";

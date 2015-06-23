@@ -433,12 +433,32 @@ POP UP EXPOSITOR
 */
 $xl-desktop: 1500px;
 $xxl-desktop: 1980px;
-@media #{$xs-only} {}
-@media #{$sm-only} {}
+@media #{$xs-only} {
+  /*ENGAGE*/
+  .engage-section{
+    padding: 0px !important;
+  }  
+}
+@media #{$sm-only} {
+  /*ENGAGE*/
+  .engage-section{
+    padding: 0px !important;
+  }
+}
 @media #{$md-only} {}
 @media #{$lg-only} {}
-@media #{$sm-down} {}
-@media #{$md-down} {}
+@media #{$sm-down} {
+  /*ENGAGE*/
+  .engage-section{
+    padding: 0px !important;
+  }  
+}
+@media #{$md-down} {
+  /*ENGAGE*/
+  .engage-section{
+    padding: 0px !important;
+  }  
+}
 @media #{$lg-down} {}
 @media #{$sm-up} {}
 @media #{$md-up} {}
