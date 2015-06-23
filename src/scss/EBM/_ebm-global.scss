@@ -56,6 +56,14 @@ a{
   bottom: 2px;
   position: relative;
 }
+/*PORQUE IR*/
+.texto-porqueir-section{
+  padding-left:0px;
+}
+/*SEDE*/
+.text-responsive-sede-article{
+  padding-right: 42px;
+}
 /*CALENDARIO DE EXPOSITORES FECHA-MES-HORA*/
 .calendario-expositores{
   border: 1px solid $brand-danger;
@@ -258,6 +266,7 @@ BORDER CONTENT GRID SEDE
 .content-text-border{
   border: 1px solid #e3e3e3;
   height: 160px;
+  margin-top:21px; 
 }
 /*CAROUSEL*/
 /*ITEM CAROUSEL*/
@@ -433,7 +442,7 @@ POP UP EXPOSITOR
 */
 $xl-desktop: 1500px;
 $xxl-desktop: 1980px;
-@media #{$xs-only} {
+@media only screen and (max-width: 480px){
   /*ARROW SCROLL*/
   .scroll-down{
   visibility: hidden;
@@ -441,6 +450,53 @@ $xxl-desktop: 1980px;
   /*PLUGIN REDES*/
   .plugins-redes-sociales{
     text-align: center !important;
+  }
+  /*SEDE*/
+  .sedecontent{
+    text-align: center !important;
+  }
+  .text-responsive-sede-article{
+    text-align: center !important;
+    padding-right:0px !important;
+  }
+  .content-text-border{
+    margin-top: 0px !important; 
+  }
+  .overlay-carousel-sede {
+    top: 182px;
+    left: 26px;
+    width: 328px;
+  }
+  /*PRENSA*/
+  .text-resposive-prensa{
+    text-align:center !important;
+  }
+  .btn-kit-prensa {
+    text-align:center !important;
+    border: 2px solid #000000;
+    width: auto;
+    a{
+      font-size: 18px;
+      color:#000 !important;
+    }
+  }
+  /*PORQUE IR*/
+  .icono-porqueir-section{
+    width:20% !important; 
+  } 
+  .texto-porqueir-section{
+    text-align: center !important;
+    padding-left: 1.5rem !important;
+  }
+  .border-percentege {
+    border: 1px solid #8f8d8e;
+    width: 32.66667% !important;
+  }
+  .subtex-porqueir-section{
+    padding-left: 14px !important;
+    text-align: right !important;
+    bottom: 80px;
+    right: 12px;
   }
   /*ENGAGE*/
   #engage-section{
@@ -476,7 +532,8 @@ $xxl-desktop: 1980px;
     width: 35%;
   }
 }
-@media #{$sm-only} {
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   /*ARROW SCROLL*/
   .scroll-down{
   visibility: hidden;
@@ -484,6 +541,53 @@ $xxl-desktop: 1980px;
   /*PLUGIN REDES*/
   .plugins-redes-sociales{
     text-align: center !important;
+  }
+  /*SEDE*/
+  .sedecontent{
+    text-align: center !important;
+  }
+  .text-responsive-sede-article{
+    text-align: center !important;
+    padding-right:0 !important;
+  }
+  .content-text-border{
+    margin-top: 0px !important; 
+  }
+  .overlay-carousel-sede {
+    top: 182px;
+    left: 26px;
+    width: 328px;
+  }
+  /*PRENSA*/
+  .text-resposive-prensa{
+    text-align:center !important;
+  }
+  .btn-kit-prensa {
+    text-align:center !important;
+    border: 2px solid #000000;
+    width: auto;
+    a{
+      font-size: 18px;
+      color:#000 !important;
+    }
+   }
+  /*PORQUE IR*/
+  .icono-porqueir-section{
+    width:20% !important; 
+  } 
+  .texto-porqueir-section{
+    text-align: center !important;
+    padding-left: 1.5rem !important;
+  }
+  .border-percentege {
+    border: 1px solid #8f8d8e;
+    width: 32.66667% !important;
+  }
+  .subtex-porqueir-section{
+    padding-left: 14px !important;
+    text-align: right !important;
+    bottom: 80px;
+    right: 12px;    
   }
   /*ENGAGE*/
   #engage-section{

@@ -61,6 +61,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  color: #000000 !important;
 }
 
 abbr[title] {
@@ -21232,6 +21233,14 @@ a.bg-hover-linkedin:not(.btn):hover,
 
 .li-ch-white li {
   color: #fff;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .block {
