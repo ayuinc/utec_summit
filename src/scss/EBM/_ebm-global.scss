@@ -60,7 +60,7 @@ a{
 .calendario-expositores{
   border: 1px solid $brand-danger;
   width: 104px;
-  height: 63px;
+  height: 54px;
   top:20px;
   left:8px;
   .numero-de-fecha{
@@ -128,7 +128,7 @@ a{
 }
 /*Formula para height*/
 
-@for $i from 1 through 400{
+@for $i from 1 through 700{
   .h-#{$i*1} {
     height : (1px*$i)!important;
   }
@@ -349,7 +349,7 @@ $position: fixed relative absolute static;
   }
 }
 /*
- POP UP
+ POP UP CONTACTO
 */
 a{
     outline: 0;
@@ -405,6 +405,26 @@ a{
 .area-custom-popup{
   width: 240px;
   height: 60px;
+}
+/*
+POP UP EXPOSITOR
+*/
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:100px;
+    height: 40px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
 }
 /*
   Media queries
