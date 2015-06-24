@@ -64,6 +64,11 @@ a{
 .text-responsive-sede-article{
   padding-right: 42px;
 }
+.texto-sede-facilidades{
+  padding-left: 3rem ; 
+  padding-right: 3rem ; 
+  padding-top: 1rem ; 
+}
 /*HISTORIAS*/
 .texto-historias{
   text-align:left;
@@ -508,6 +513,11 @@ $xxl-desktop: 1980px;
   }
   .mapa-pop-up > iframe{
     width: 300px !important;
+  }
+  .texto-sede-facilidades{
+    padding-left: 7px !important ; 
+    padding-right: 0px  !important; 
+    padding-top: 0px !important; 
   }
   /*PRENSA*/
   .text-resposive-prensa{
