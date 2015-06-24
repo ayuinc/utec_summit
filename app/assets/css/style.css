@@ -8622,6 +8622,17 @@ POP UP EXPOSITOR
     padding-right: 0px;
   }
 
+  /*HISTORIAS*/
+  .imagen-historias-responsive {
+    margin-top: 21px;
+  }
+
+  /*REGISTRATE*/
+  .area-custom,
+  .input-form-postulacion {
+    width: 256px;
+  }
+
   #redes-sociales {
     text-align: center;
     padding-left: 0px !important;
@@ -8755,6 +8766,17 @@ POP UP EXPOSITOR
   }
   #engage-section h3 {
     font-size: 20px !important;
+  }
+
+  /*HISTORIAS*/
+  .imagen-historias-responsive {
+    margin-top: 21px;
+  }
+
+  /*REGISTRATE*/
+  .area-custom,
+  .input-form-postulacion {
+    width: 256px;
   }
 
   #redes-sociales {
