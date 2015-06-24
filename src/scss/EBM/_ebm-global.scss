@@ -64,6 +64,10 @@ a{
 .text-responsive-sede-article{
   padding-right: 42px;
 }
+/*HISTORIAS*/
+.texto-historias{
+  text-align:left;
+}
 /*CALENDARIO DE EXPOSITORES FECHA-MES-HORA*/
 .calendario-expositores{
   border: 1px solid $brand-danger;
@@ -482,6 +486,10 @@ $xxl-desktop: 1980px;
   .plugins-redes-sociales{
     text-align: center !important;
   }
+  /*HISTORIAS*/
+  .texto-historias{
+    text-align: center;
+  }
   /*SEDE*/
   .sedecontent{
     text-align: center !important;
@@ -597,6 +605,10 @@ $xxl-desktop: 1980px;
   /*PLUGIN REDES*/
   .plugins-redes-sociales{
     text-align: center !important;
+  }
+  /*HISTORIAS*/
+  .texto-historias{
+    text-align: center;
   }
   /*SEDE*/
   .sedecontent{

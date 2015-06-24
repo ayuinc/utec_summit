@@ -1077,6 +1077,11 @@ a {
   padding-right: 42px;
 }
 
+/*HISTORIAS*/
+.texto-historias {
+  text-align: left;
+}
+
 /*CALENDARIO DE EXPOSITORES FECHA-MES-HORA*/
 .calendario-expositores {
   border: 1px solid #FF6633;
@@ -8535,6 +8540,11 @@ POP UP EXPOSITOR
     text-align: center !important;
   }
 
+  /*HISTORIAS*/
+  .texto-historias {
+    text-align: center;
+  }
+
   /*SEDE*/
   .sedecontent {
     text-align: center !important;
@@ -8670,6 +8680,11 @@ POP UP EXPOSITOR
   /*PLUGIN REDES*/
   .plugins-redes-sociales {
     text-align: center !important;
+  }
+
+  /*HISTORIAS*/
+  .texto-historias {
+    text-align: center;
   }
 
   /*SEDE*/
