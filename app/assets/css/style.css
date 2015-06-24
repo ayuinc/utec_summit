@@ -8485,6 +8485,10 @@ a {
   font-size: 1.3em;
 }
 
+.input-texto {
+  padding-left: 0px;
+}
+
 .input-contacto {
   height: 26px;
   width: 240px;
@@ -8640,8 +8644,21 @@ POP UP EXPOSITOR
   }
 
   #modal {
-    width: 540px;
-    height: 653px;
+    width: 367px;
+    height: 646px;
+    left: 46%;
+  }
+
+  .input-texto {
+    padding-left: 50px !important;
+  }
+
+  #close {
+    left: 91%;
+    top: 6px;
+  }
+  #close span {
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -8753,7 +8770,21 @@ POP UP EXPOSITOR
   }
 
   #modal {
-    height: 648px;
+    width: 367px;
+    height: 646px;
+    left: 46%;
+  }
+
+  .input-texto {
+    padding-left: 50px !important;
+  }
+
+  #close {
+    left: 91%;
+    top: 6px;
+  }
+  #close span {
+    font-size: 30px;
   }
 }
 /* Prevent layout breakage on unsupporting browsers */
