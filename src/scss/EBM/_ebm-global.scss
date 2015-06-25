@@ -118,7 +118,7 @@ a{
 @for $i from 0 through 700{
   #twitter-widget-#{$i*1} {
   border-radius: 0 !important;
-  width:290px;
+  width:290px !important;
   }
 }  
 .root .timeline .ltr .customisable-border  .twitter-timeline .is-touch .twitter-timeline-rendered .var-narrow{
