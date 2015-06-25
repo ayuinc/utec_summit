@@ -8901,6 +8901,11 @@ POP UP EXPOSITOR
     left: 11px;
   }
 
+  .linkedin-responsive {
+    left: 40px !important;
+    top: 11px !important;
+  }
+
   /*HISTORIAS*/
   .imagen-historias-responsive {
     margin-top: 21px;
@@ -8976,6 +8981,10 @@ POP UP EXPOSITOR
   .calendario-expositores {
     top: 0px;
     left: 11px;
+  }
+
+  .linkedin-responsive {
+    left: 155px !important;
   }
 
   /*HISTORIAS*/
