@@ -8351,7 +8351,7 @@ li.active .depth-2 {
   list-style: none;
 }
 #overlay-menu ul li {
-  height: 70px;
+  height: 50px;
   font-size: 18px;
   font-size: 1.28571rem;
 }
@@ -8638,7 +8638,7 @@ POP UP EXPOSITOR
     list-style: none;
   }
   #overlay-menu ul li {
-    height: 60px;
+    height: 50px;
     font-size: 18px;
     font-size: 1.28571rem;
   }
@@ -8666,7 +8666,7 @@ POP UP EXPOSITOR
 
   /*MENU CONTENT*/
   .row-content-social-icons {
-    padding-top: 80px;
+    padding-top: 16px;
   }
 
   /*PLUGIN REDES*/
