@@ -437,7 +437,7 @@ li.active .depth-2 {
   ul {
     list-style: none;
     li {
-      height: 50px;
+      height: 60px;
       font-size: 18px;
       font-size: rem(18px);
       a{
@@ -567,44 +567,17 @@ POP UP EXPOSITOR
   Media queries
 */
 $xl-desktop: 1500px;
-$xxl-desktop: 1980px;
-@media only screen and (max-width: 350px){
-  #overlay-menu {
-    position: fixed;
-    z-index: 112;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    @include transform(translateX(-100%));
-    @include transition(transform .5s ease);
-    ul {
-      list-style: none;
-      li {
-        height: 50px;
-        font-size: 18px;
-        font-size: rem(18px);
-        a{
-          color: rgba(14, 14, 14, 0.49) !important;   
-        }
-      }
-    }
-  }
-  .open {
-    @include transform(translateX(0)!important);
-  }
-  .row-content-social-icons{
-    padding-top:48px !important;
-  }
-}  
-@media only screen and (max-width: 375px){
+$xxl-desktop: 1980px; 
+@media only screen and (max-width: 480px){
   /*ARROW SCROLL*/
   .scroll-down{
   visibility: hidden;
   }
   /*MENU CONTENT*/
   .row-content-social-icons{
-    padding-top:16px;
+    position: absolute;
+    bottom:0;
+    width: 100%;
   }
   /*PLUGIN REDES*/
   .plugins-redes-sociales{
