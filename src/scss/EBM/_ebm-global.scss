@@ -118,7 +118,7 @@ a{
 @for $i from 0 through 700{
   #twitter-widget-#{$i*1} {
   border-radius: 0 !important;
-  width:290px !important;
+  width:290px;
   }
 }  
 .root .timeline .ltr .customisable-border  .twitter-timeline .is-touch .twitter-timeline-rendered .var-narrow{
@@ -568,13 +568,11 @@ li.active .depth-2 {
 }
 
 .depth-2 a {
-  color: white;
   display: inline-block;
   font-size: 13px;
   line-height: 1.2;
   padding: 5px 0;
   text-decoration: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.25);
 }
 
 .depth-2 li.first a {
@@ -621,7 +619,7 @@ li.active .depth-2 {
 .addthisevent .data           {display:none!important;}
 
 /* The button */
-.addthisevent-drop            {display:inline-block;position:relative;z-index:9s;font-family:"proxima-nova",Arial,sans-serif;color:#000!important;font-weight:300;line-height:100%;background:#fff;border:1px solid;border-color:#e5e6e9 #dfe0e4 #d0d1d5;font-size:15px;text-decoration:none;padding:13px 12px 12px 13px;-webkit-border-radius:3px;border-radius:3px;cursor:pointer;-webkit-font-smoothing:antialiased!important;text-shadow:1px 1px 1px rgba(0,0,0,0.004);}
+.addthisevent-drop            {display:inline-block;position:relative;z-index:9;font-family:"proxima-nova",Arial,sans-serif;color:#000!important;font-weight:300;line-height:100%;background:#fff;border:1px solid;border-color:#e5e6e9 #dfe0e4 #d0d1d5;font-size:15px;text-decoration:none;padding:13px 12px 12px 13px;-webkit-border-radius:3px;border-radius:3px;cursor:pointer;-webkit-font-smoothing:antialiased!important;text-shadow:1px 1px 1px rgba(0,0,0,0.004);}
 .addthisevent-drop:hover        {border:1px solid #aab9d4;color:#000;font-size:15px;text-decoration:none;}
 .addthisevent-drop:active         {top:1px;}
 .addthisevent-selected          {background-color:#f9f9f9;}
@@ -814,6 +812,11 @@ $xxl-desktop: 1980px;
       padding-right: 0px;
     }
   }
+  /*EXPOSITORES*/
+  .calendario-expositores{
+    top: 0px;
+    left: 11px;
+  }
   /*HISTORIAS*/
   .imagen-historias-responsive{
     margin-top: 21px;
@@ -873,6 +876,11 @@ $xxl-desktop: 1980px;
   /*PLUGIN REDES*/
   .plugins-redes-sociales{
     text-align: center !important;
+  }
+  /*EXPOSITORES*/
+  .calendario-expositores{
+    top: 0px;
+    left: 11px;
   }
   /*HISTORIAS*/
   .texto-historias{
