@@ -8658,7 +8658,7 @@ POP UP EXPOSITOR
     padding-top: 48px !important;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
   /*ARROW SCROLL*/
   .scroll-down {
     visibility: hidden;
