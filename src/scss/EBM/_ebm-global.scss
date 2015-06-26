@@ -583,7 +583,13 @@ POP UP EXPOSITOR
 */
 $xl-desktop: 1500px;
 $xxl-desktop: 1980px; 
-
+@media only screen and (max-width: 340px){
+    #overlay-menu ul li {
+      height: 44px;
+      font-size: 18px;
+      font-size: 1.28571rem;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /*ARROW SCROLL*/
   .scroll-down{
