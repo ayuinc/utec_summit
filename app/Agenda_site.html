@@ -42,6 +42,44 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+   <!-- Modal - Gracias-->
+  <div class="modal fade" id="Modalogo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content p-42">
+        <div class="modal-header text-right ">
+          <button type="button" class="close text-uppercase font-s-12 text-danger"  data-dismiss="modal" aria-label="close">cerrar<span aria-hidden="true">&times;</span></button> 
+        </div>
+        <div class="modal-body">
+          <div class="img-gracias-popup text-center">
+            <img class="w-70" src="assets/img/gracias-foto.png" alt="">
+          </div>
+          <div class="row text-center">
+            <div class="col-sm-12 pv-35">
+              <p class="text-gray">No te quedes sin conocer <br> otros aspectos importantes de la conferencia.</p>
+            </div>
+            <div class="col-sm-12">
+              <p class="text-gray-dark bold">Descubre más de lo que te <br> podemos ofrecer</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <h5 class="text-gray-dark bold">Conéctate</h5>
+              <p class="text-gray">Haz networking desde ahora en la</p>
+              <a class="text-danger" href="#">sección engage</a>
+            </div>
+            <div class="col-sm-4 text-center">
+              <h5 class="text-gray-dark bold">Más capacitación</h5>
+              <p class="text-gray">Desarrolla tu carrera <br> con nuestros</p>
+              <a class="text-danger" href="#">cursos y diplomados</a>
+            </div>
+            <div class="col-sm-4 text-center">
+              <h5 class="text-gray-dark bold">Recursos</h5>
+              <p class="text-gray">Papeles, árticulos y <br> otros</p>
+              <a class="text-danger" href="#">recursos rápidos</a>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
   <!--Modal Contacto-->
   <section>
     <div class="modal-bg text-center fade">
@@ -125,7 +163,7 @@
           </button>    
         </div>
         <div class="col-xs-10 logo-menu-mobile text-right">
-          <a href="index.html"><img class="w-20 pr-14 mt-14" src="assets/icons/logo-suma-footer.png" alt="Logo Suma"></a>
+          <a href="" class="btn-in font-s-13 text-danger text-uppercase" data-toggle="modal" data-target="#Modalogo"><img class="w-30 pr-21 mt-14"  src="assets/icons/logo-suma-footer.png" alt="Logo Suma"></a>
           <a href="index.html"><img class="w-20 pr-21 mt-14" src="assets/icons/logo-utec.png" alt="Logo UTEC"></a>          
         </div>        
       </div>
