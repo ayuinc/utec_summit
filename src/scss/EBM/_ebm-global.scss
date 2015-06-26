@@ -442,6 +442,9 @@ li.active .depth-2 {
       height: 60px;
       font-size: 18px;
       font-size: rem(18px);
+      &:hover{
+        background-color : #c82828 !important;
+      }
       a{
         color: rgba(14, 14, 14, 0.49) !important;   
       }
