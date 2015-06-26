@@ -22119,8 +22119,6 @@ a.bg-hover-linkedin:not(.btn):hover,
   .container-sm,
   .container-md {
     width: 100%;
-    padding-left: 14px;
-    padding-right: 14px;
     margin: 0 auto;
   }
 }
