@@ -112,16 +112,6 @@ a{
   width: 290px !important;
   height: 400px !important;
 }
-/*TWITTER PLUG-IN*/
-// /*Formula Plug-in Twitter*/
-
-// @for $i from 0 through 700{
-//   #twitter-widget-#{$i*1} {
-//   border-radius: 0 !important;
-//   width:290px !important;
-//   }
-// }  
-
 
 .root .timeline .ltr .customisable-border  .twitter-timeline .is-touch .twitter-timeline-rendered .var-narrow{
   width: 290px !important;
@@ -430,7 +420,7 @@ li.active .depth-2 {
 .back-overlay-menu{
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
-  z-index: 999;
+  z-index: 200;
   width: 100%;
   height: 100vh;
   @include transform(translateX(-100%));

@@ -80,12 +80,15 @@ body{
 .modal-header {
   padding: $modal-title-padding;
   min-height: ($modal-title-padding + $modal-title-line-height);
+  text-align: right;
 }
 // Close icon
 .modal-header .close {
   margin-top: -2px;
   background-color: transparent;
   border: transparent;
+  font-size: 12px;
+  text-align: right;
 }
 
 // Title text within header
@@ -142,11 +145,28 @@ body{
   .modal-content {
     @include box-shadow(0 5px 15px rgba(0,0,0,.5));
   }
-
   // Modal sizes
   .modal-sm { width: $modal-sm; }
 }
 
 @media (min-width: $screen-md-min) {
   .modal-lg { width: $modal-lg; }
+}
+@media only screen and (max-width: 340px){
+.modal-position-close{
+  text-align: center !important;
+  font-size: 14px !important;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+.modal-position-close{
+  text-align: center !important;
+  font-size: 14px !important;
+}
+}
+@media only screen and (max-width: 480px){
+.modal-position-close{
+  text-align: center !important;
+  font-size: 14px !important;
+}
 }
