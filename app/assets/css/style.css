@@ -4825,10 +4825,26 @@ li.active .depth-2 {
 }
 
 /*MEN├Ü RESPONSIVE*/
+.back-overlay-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -moz-transition: -moz-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
 #overlay-menu {
   position: fixed;
   z-index: 112;
-  width: 100%;
+  width: 90%;
   height: 100%;
   top: 0;
   left: 0;
@@ -4850,7 +4866,7 @@ li.active .depth-2 {
   font-size: 1.28571rem;
 }
 #overlay-menu ul li:hover {
-  background-color: #c82828 !important;
+  background-color: #FF4000 !important;
 }
 #overlay-menu ul li a {
   color: rgba(14, 14, 14, 0.49) !important;
